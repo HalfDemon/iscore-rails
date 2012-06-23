@@ -12,29 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.input :username %><br />
   </div>
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.input :name %><br />
   </div>
   <div class="field">
-    <%= f.label :site %><br />
-    <%= f.text_field :site %>
+    <%= f.input :password %><br />
   </div>
-  <div class="field">
-    <%= f.label :password_digest %><br />
-    <%= f.text_field :password_digest %>
-  </div>
-  <div class="field">
-    <%= f.label :admin %><br />
-    <%= f.check_box :admin %>
-  </div>
-  <div class="field">
-    <%= f.label :team %><br />
-    <%= f.text_field :team %>
-  </div>
+
+   <% if @current_user.admin? %> 
+        <div class="field">
+      <%= f.input :site %><br />
+    </div>
+
+      <div class="field">
+        <%= f.input :team %><br />
+      </div>
+  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>
