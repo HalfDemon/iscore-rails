@@ -53,7 +53,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   The will enter the flag into the text field on the flag page for later verifition. 
 
 * Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
- field, to able back points, up to half. These will be judge by the Red and White teams.
+  field, to able back points, up to half. These will be judged by the Red and White teams.
 
 
 
