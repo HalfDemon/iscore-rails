@@ -36,7 +36,7 @@ group :development, :test do
 	gem 'factory_girl_rails', '3.5.0'
 	gem 'guard-rails_best_practices'
 	gem 'webrat'
-  	gem 'sqlite3'
+  	gem 'sqlite3', :platform => [:ruby, :mswin, :mingw] 
 end
 
 gem 'simple_form'
