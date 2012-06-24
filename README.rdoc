@@ -43,8 +43,17 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 * Anomalies - A optional chanllages made by the Green Team Leader. This will give Blue Teams additanal points.
 
 * Green Team Usability: These are manully checks by the Green Team to test the Blue Teams'
-             Services. These forms will need changed for each year of your CDC.
-             The IScorE-rails will use the 2012 IT-Adventures Cyber Defense.
+  Services. These forms will need changed for each year of your CDC.
+  The IScorE-rails will use the 2012 IT-Adventures Cyber Defense. The checks
+  have check boxs. You check if the service is up and don't if it isn't. It
+  is also recommend to add a comment about each outage.
+
+== Flags
+* Flags are made by Competion Director. The Read Team will marks theses flags as captured when the discover them.
+  The will enter the flag into the text field on the flag page for later verifition. 
+
+* Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
+ field, to able back points, up to half. These will be judge by the Red and White teams.
 
 
 
