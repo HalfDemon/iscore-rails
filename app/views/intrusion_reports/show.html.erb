@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @intrusion_report.subject %>
+</p>
+
+<p>
+  <b>Team:</b>
+  <%= @intrusion_report.team_id %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @intrusion_report.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_intrusion_report_path(@intrusion_report) %> |
+<%= link_to 'Back', intrusion_reports_path %>

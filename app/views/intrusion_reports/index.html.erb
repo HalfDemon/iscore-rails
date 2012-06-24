@@ -1,0 +1,27 @@
+<h1>Listing intrusion_reports</h1>
+
+<table>
+  <tr>
+    <th>Subject</th>
+    <th>Team</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @intrusion_reports.each do |intrusion_report| %>
+  <tr>
+    <td><%= intrusion_report.subject %></td>
+    <td><%= intrusion_report.team_id %></td>
+    <td><%= intrusion_report.content %></td>
+    <td><%= link_to 'Show', intrusion_report %></td>
+    <td><%= link_to 'Edit', edit_intrusion_report_path(intrusion_report) %></td>
+    <td><%= link_to 'Destroy', intrusion_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Intrusion report', new_intrusion_report_path %>

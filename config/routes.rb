@@ -1,4 +1,12 @@
 Iscore::Application.routes.draw do
+  get "intrusion_report_comment/content"
+
+  get "intrusion_report_comment/user_id:integer"
+
+  get "intrusion_report_comment/intrusion_report_id:integer"
+
+  resources :intrusion_reports
+
   resources :sites
 
   resources :users

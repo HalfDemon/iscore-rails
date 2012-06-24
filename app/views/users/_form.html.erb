@@ -27,7 +27,9 @@
     </div>
 
       <div class="field">
-        <%= f.input :team %><br />
+        <%= f.input :team do %>
+          <%= f.select :team, TEAMS, :include_blank => true %>
+        <% end %>
       </div>
   <% end %>
 
