@@ -1,4 +1,6 @@
 Iscore::Application.routes.draw do
+  resources :documents
+
   resources :sites
 
   resources :users
