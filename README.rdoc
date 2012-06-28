@@ -72,4 +72,16 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 * The score will be released to Blue Teams after all reports are done and 
   the scores are released by Green Team Leader
 
-* 
+== Anomalies
+* Created by the Green Team Leader
+
+* Done by the Blue Team 
+
+* Juged by the Green Team Leaders and/ or members
+
+== Documentaion
+* Created by Blue Teams
+
+* Used by Green and White Teams
+
+* Juged by Green and White Teams
