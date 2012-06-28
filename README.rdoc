@@ -1,5 +1,5 @@
-= Welcome to iscore-rails
-iscore-rails is a Cyber Denfense Competition scoring system.
+= Welcome to IScorE-rails
+IScorE-rails is a Cyber Denfense Competition scoring system.
 
 {<img src="https://secure.travis-ci.org/Mab879/iscore-rails.png?branch=master" alt="Build Status" />}[http://travis-ci.org/Mab879/iscore-rails]
 
