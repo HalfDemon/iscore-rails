@@ -11,7 +11,7 @@ change the names for your type of Cyber Defense Competition.
 PLEASE NOTE: ISorE-rails is based off the rules, scoring, etc. from the 2012 IT-Adventures 
 competition. Please change this application for YOUR CDC.
 
-== Team Descriptons (from the Offical Iowa State Documention)
+== Team Descriptons ({from the Offical Iowa State Documention}[https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf])
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
 teams must identify and defend against various security threats via the Competition network.
 
@@ -26,7 +26,7 @@ This team is the judging authority for the CDC.
 They play the role of typical network users.  The Green Team duties include regular Internet
 usage and the execution of predefined anomalies.
 
-== Terms Glossery (from the Offical Iowa State Documention)
+== Terms Glossery ({from the Offical Iowa State Documention}[https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf])
 * Flag - a ncrypted file placed in a predefined location.  The Red Team much capture these
 flags from or plant them onto teams’ systems.
 
@@ -71,3 +71,5 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * The score will be released to Blue Teams after all reports are done and 
   the scores are released by Green Team Leader
+
+* 
