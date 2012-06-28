@@ -11,6 +11,10 @@ change the names for your type of Cyber Defense Competition.
 PLEASE NOTE: ISorE-rails is based off the rules, scoring, etc. from the 2012 IT-Adventures 
 competition. Please change this application for YOUR CDC.
 
+POST SCRIPT: Please take note that most of have is descriped below isn't created yet. The point of this
+README is to tell you what ISorE-rails is and the the people who work on this project what the should 
+be doing and how.
+
 == Team Descriptons ({from the Offical Iowa State Documention}[https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf])
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
 teams must identify and defend against various security threats via the Competition network.
@@ -85,3 +89,54 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 * Used by Green and White Teams
 
 * Juged by Green and White Teams
+
+== Perimisions
+* Each User has a Team membership to a team. 
+
+* It will be to one of the following:
+  - Blue 
+  - Green
+  - Red
+  - White
+  - Admin: Access to all teams
+
+* If the user is one of red, green, blue, or white teams he or she will only be able 
+  to access that area of ISorE-rails.
+
+* On the Blue Team Users only see their teams items
+
+* Admins have access to all
+
+* These are defined in <tt>app/models/ability.rb</tt>.
+
+* Autherztion is done by {CanCan}(https://github.com/ryanb/cancan/) by {Ryan Bates}(https://github.com/ryanb)
+
+== Team Dashbaords
+* The can be found at (ISorE_host)/dashboard/(team_color)
+
+* Access is restricted by the rules above
+
+== Service checks
+* The SCANNER currenly NOT apart of IScorE-rails
+
+* Might make our own later as differnt project
+
+* If you wnat service scores, update status, etc you will need to intergate / roll your own
+
+* If you roll your own please note the following
+
+* IScorE-rails expects thats you give it the infomation like so
+
+* (ISorE_host)/api/v1/uptime/add/(site_number)/(service_name_id)/(status)/(auth_token)
+
+* <tt>site_number</tt> =  The owner of the service that is being checked. If you where checking Site 1 it would be 1
+
+* <tt>service_name_id</tt> The id of the service that is being checked. These are stored in the services model. 
+  the ids are listed in the admin section.
+
+* <tt>status</tt> This is must be 0 or 1. 0 for being down. 1 for being up.
+
+* <tt>auth_token</tt> The API token
+
+== Scoring
+* Scoring is the very heart of IScorE
