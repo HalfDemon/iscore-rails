@@ -56,13 +56,13 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   field, to able back points, up to half. These will be judged by the Red and White teams.
 
 == Intrusion Reports
-  * Intrusion reports are periodic reports that are submitted by the Blue Teams. 
+* Intrusion reports are periodic reports that are submitted by the Blue Teams. 
 
-  * This report is where the teams will tell what isn't or is happening with there networks and services.
+* This report is where the teams will tell what isn't or is happening with there networks and services.
 
-  * These are juged by the White Team
+* These are juged by the White Team
 
-  * Only one report per reporting period.
+* Only one report per reporting period.
 
 
 
