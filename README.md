@@ -1,7 +1,8 @@
 # Welcome to IScorE-rails
 IScorE-rails is a Cyber Denfense Competition scoring system.
 
-[<img src#"https://secure.travis-ci.org/Mab879/iscore-rails.png?branch#master" alt#"Build Status" />](http://travis-ci.org/Mab879/iscore-rails)
+
+[![Build Status](https://secure.travis-ci.org/Mab879/iscore-rails.png?branch=master)](http://travis-ci.org/Mab879/iscore-rails)
 
 This applcation uses the Iowa State and IT-Adventures Cyber
 Defense Cyber Defense Competition structure and naming 
@@ -15,7 +16,7 @@ POST SCRIPT: Please take note that most of have is descriped below isn't created
 README is to tell you what ISorE-rails is and the the people who work on this project what the should 
 be doing and how.
 
-## Team Descriptons ({from the Offical Iowa State Documention}[https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf])
+## Team Descriptons ([from the Offical Iowa State Documention[](https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf))
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
 teams must identify and defend against various security threats via the Competition network.
 
@@ -30,7 +31,7 @@ This team is the judging authority for the CDC.
 They play the role of typical network users.  The Green Team duties include regular Internet
 usage and the execution of predefined anomalies.
 
-## Terms Glossery ({from the Offical Iowa State Documention}[https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf])
+## Terms Glossery ([from the Offical Iowa State Documention[](https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf))
 * Flag - a ncrypted file placed in a predefined location.  The Red Team much capture these
 flags from or plant them onto teams’ systems.
 
