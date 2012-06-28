@@ -42,7 +42,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Anomalies - A optional chanllages made by the Green Team Leader. This will give Blue Teams additanal points.
 
-* Green Team Usability: These are manully checks by the Green Team to test the Blue Teams'
+* Green Team Usability Reports: These are manully checks by the Green Team to test the Blue Teams'
   Services. These forms will need changed for each year of your CDC.
   The IScorE-rails will use the 2012 IT-Adventures Cyber Defense. The checks
   have check boxs. You check if the service is up and don't if it isn't. It
@@ -64,10 +64,10 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Only one report per reporting period.
 
+== Green Team Usability Reports
+* Started by Green Team Leader
 
+* Then Started only Green Team Memebers can see theses scores and edit theme
 
-
-
-
-
-
+* The score will be released to Blue Teams after all reports are done and 
+  the scores are released by Green Team Leader
