@@ -110,10 +110,10 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * These are defined in `app/models/ability.rb`.
 
-* Autherztion is done by {CanCan}(https://github.com/ryanb/cancan/) by {Ryan Bates}(https://github.com/ryanb)
+* Autherztion is done by [CanCan](https://github.com/ryanb/cancan/) by [Ryan Bates](https://github.com/ryanb)
 
 ## Team Dashbaords
-* The can be found at (ISorE_host)/dashboard/(team_color)
+* The can be found at `(ISorE_host)/dashboard/(team_color)`
 
 * Access is restricted by the rules above
 
@@ -122,22 +122,22 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Might make our own later as differnt project
 
-* If you wnat service scores, update status, etc you will need to intergate / roll your own
+* If you want service scores, update status, etc you will need to intergate / roll your own
 
 * If you roll your own please note the following
 
 * IScorE-rails expects thats you give it the infomation like so
 
-* (ISorE_host)/api/v1/uptime/add/(site_number)/(service_name_id)/(status)/(auth_token)
+* `(ISorE_host)/api/v1/uptime/add/(site_number)/(service_name_id)/(status)/(auth_token)`
 
-* `site_number` =  The owner of the service that is being checked. If you where checking Site 1 it would be 1
+  - `site_number` =  The owner of the service that is being checked. If you where checking Site 1 it would be 1
 
-* `service_name_id` The id of the service that is being checked. These are stored in the services model. 
-  the ids are listed in the admin section.
+  - `service_name_id` The id of the service that is being checked. These are stored in the services model. 
+  the ids are listed in the admin sectiaon.
 
-* `status` This is must be 0 or 1. 0 for being down. 1 for being up.
+  - `status` This is must be 0 or 1. 0 for being down. 1 for being up.
 
-* `auth_token` The API token
+  - `auth_token` The API token
 
 ## API
 * Some of the functions of IScorE are accessable and/ or use the API to the task they were designed to do.
@@ -146,9 +146,15 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * There is ONE, API key for the whole App.
 
-* If you reset the API token *YOU WILL BREAK EVERYTHING THAT USES IT*. YES, REALLY*. 
+* If you reset the API token **YOU WILL BREAK EVERYTHING THAT USES IT. YES, REALLY**. 
 
-* If you are using the service scanner and change
+* If you are using the service scanner and change API token **YOU WILL BREAK IT**
+
+* If you are using an third party service and change the API token **YOU WILL** break things
+
+* The API is versioned currenly we are on version 1 (one) of the api.
+
+* The API can be found at `(IScorE_host)/api/v1/`
 
 ## Scoring
 * Scoring is the very heart of IScorE
