@@ -1,12 +1,10 @@
 language: ruby
 rvm:
-        - 1.9.2
-        - 1.9.3
-        - rbx-19mode
-        - ruby-head
-before_install: 
-	"rvm use 1.9.3"
+  - 1.9.2
+  - 1.9.3
+before_install:
+  - gem update --system
 before_script:
-	- "rake db:migrate"
-	- "rake db:test:prepare"
+  - "bundle exec rake db:migrate"
+  
 script: "rake spec/"
