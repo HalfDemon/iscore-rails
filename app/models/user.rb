@@ -26,7 +26,7 @@ class User < ActiveRecord::Base
 
   validates_presence_of :username, :password, :team, :site
 
-  TEAMS = ["Red", "Whit", "Green", "Blue"]
+  TEAMS = ["Red", "White", "Green", "Blue", "Admin"]
  
   has_secure_password
 
@@ -34,5 +34,17 @@ class User < ActiveRecord::Base
   	def admin?
   		self.admin == true
   	end
+
+    def red?
+      self.team == "Red"
+    end
+
+    def white?
+      self.team == "White"
+    end
+
+    def green?
+      self.team == "Green"
+    end
   end
 end
