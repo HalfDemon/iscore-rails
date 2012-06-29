@@ -108,7 +108,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Admins have access to all
 
-* These are defined in <tt>app/models/ability.rb</tt>.
+* These are defined in `app/models/ability.rb`.
 
 * Autherztion is done by {CanCan}(https://github.com/ryanb/cancan/) by {Ryan Bates}(https://github.com/ryanb)
 
@@ -130,14 +130,25 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * (ISorE_host)/api/v1/uptime/add/(site_number)/(service_name_id)/(status)/(auth_token)
 
-* <tt>site_number</tt> =  The owner of the service that is being checked. If you where checking Site 1 it would be 1
+* `site_number` =  The owner of the service that is being checked. If you where checking Site 1 it would be 1
 
-* <tt>service_name_id</tt> The id of the service that is being checked. These are stored in the services model. 
+* `service_name_id` The id of the service that is being checked. These are stored in the services model. 
   the ids are listed in the admin section.
 
-* <tt>status</tt> This is must be 0 or 1. 0 for being down. 1 for being up.
+* `status` This is must be 0 or 1. 0 for being down. 1 for being up.
 
-* <tt>auth_token</tt> The API token
+* `auth_token` The API token
+
+## API
+* Some of the functions of IScorE are accessable and/ or use the API to the task they were designed to do.
+
+* To use the API use must be a member of the admin team.
+
+* There is ONE, API key for the whole App.
+
+* If you reset the API token *YOU WILL BREAK EVERYTHING THAT USES IT*. YES, REALLY*. 
+
+* If you are using the service scanner and change
 
 ## Scoring
 * Scoring is the very heart of IScorE
