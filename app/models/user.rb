@@ -57,6 +57,10 @@ class User < ActiveRecord::Base
     def green?
       self.team == "Green"
     end
+
+    def blue?
+      self.team == "Blue"
+    end
   end
 
   private

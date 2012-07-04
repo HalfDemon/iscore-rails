@@ -12,9 +12,14 @@ describe User do
   it { should respond_to(:password) }
   it { should respond_to(:team) }
   it { should respond_to(:email) }
-  it { should respond_to(:admin?) }
-  it { should respond_to(:red?) }
-  it { should respond_to(:green?) }
-  it { should respond_to(:blue?) }
-  it { should respond_to(:red?) }
+
+
+
+  describe "accessible attributes" do
+    it "should not allow access to admin" do
+      expect do
+        User.new(admin: true)
+      end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
+    end
+  end
 end
