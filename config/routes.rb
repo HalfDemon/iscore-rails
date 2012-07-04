@@ -1,7 +1,14 @@
 Iscore::Application.routes.draw do
+  get "sessions/new"
+
   resources :sites
 
   resources :users
+
+  resources :sessions, only: [:new, :create, :destroy]
+
+  match '/sign_in', to: 'sessions#new'
+  match 'sign_out', to: 'sessions#destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

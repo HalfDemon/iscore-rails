@@ -21,14 +21,25 @@
 #
 # 
 class User < ActiveRecord::Base
-  belongs_to :site
-  attr_accessible :name, :username, :password, :email, :team, :password_digest, :site_id
+  attr_accessible :name, :username, :password, :email, :team, :site_id
 
   validates_presence_of :username, :password, :team, :site
 
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
+  validates :email, format: { with: VALID_EMAIL_REGEX }
+
   TEAMS = ["Red", "White", "Green", "Blue", "Admin"]
+
+  before_save { |user| user.email = email.downcase }
+
+  before_save { |user| user.email = username.downcase }
+
+  before_save :create_remember_token
  
   has_secure_password
+
+  belongs_to :site
 
   class << self
   	def admin?
@@ -47,4 +58,10 @@ class User < ActiveRecord::Base
       self.team == "Green"
     end
   end
+
+  private
+
+    def create_remember_token
+      self.remember_token = SecureRandom.urlsafe_base64
+    end
 end
