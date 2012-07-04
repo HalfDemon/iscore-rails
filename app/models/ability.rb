@@ -6,7 +6,8 @@ class Ability
     if user.admin?
       can :manage, :all
     elsif user.blue?
-     	can :read, :all
+     	can :manage, :all, site_id: user.site_id
+    elsif user.red?
     end
   end
 end

@@ -3,6 +3,7 @@ IScorE-rails is a Cyber Denfense Competition scoring system.
 
 
 [![Build Status](https://secure.travis-ci.org/Mab879/iscore-rails.png?branch=master)](http://travis-ci.org/Mab879/iscore-rails)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mab879/iscore-rails)
 
 This applcation uses the Iowa State and IT-Adventures Cyber
 Defense Cyber Defense Competition structure and naming 
