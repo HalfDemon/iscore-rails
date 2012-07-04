@@ -5,7 +5,6 @@ class CreateSites < ActiveRecord::Migration
       t.string :organization, null: false
       t.interger :points, default: 0
       t.string :number, null: false
-
       t.timestamps
     end
   end
