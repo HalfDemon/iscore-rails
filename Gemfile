@@ -45,6 +45,9 @@ group :production do
 	gem 'pg'
 end
 
+# Use CanCan to Auth users
+gem 'cancan', '~> 1.6.8'
+
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
