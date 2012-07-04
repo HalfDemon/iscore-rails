@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Service:</b>
+  <%= @flag.service %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @flag.site_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @flag.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_flag_path(@flag) %> |
+<%= link_to 'Back', flags_path %>

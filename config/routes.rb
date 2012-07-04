@@ -1,4 +1,6 @@
 Iscore::Application.routes.draw do
+  resources :flags
+
   get "sessions/new"
 
   resources :sites
