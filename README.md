@@ -88,9 +88,9 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 ## Documentaion
 * Created by Blue Teams
 
-* Used by Green and White Teams
+* Used by Green and White Teams, or others as you see fit
 
-* Juged by Green and White Teams
+* Juged by Green and White Teams, again as you see fit
 
 ## Perimisions
 * Each User has a Team membership to a team. 
@@ -111,7 +111,32 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * These are defined in `app/models/ability.rb`.
 
-* Autherztion is done by [CanCan](https://github.com/ryanb/cancan/) by [Ryan Bates](https://github.com/ryanb)
+* Authorization is done by [CanCan](https://github.com/ryanb/cancan/) by [Ryan Bates](https://github.com/ryanb)
+
+* Authentication is handle, by default, is username and password model. Password are in encrypted via BCrypt. 
+  Methods that are used are provioded by Ruby on Rails' `has_secure_password` methods. 
+
+## Team Acess
+### Blue Teams
+* Have access write (and read) access to:
+  - Their Green Team Anaoiles respones
+  - Their Flag earn back reports, after the flag was taken
+  - Their Periodic Intrusion reports BEFORE the Deadline
+* Have read access to 
+  - Their Flag Status
+  - Their Score
+  - Their Services Uptime
+  - Their Services Status
+  - Anomalies created by the Green Team
+  - Comments about their reports
+
+### Red Team
+
+
+### Green Team
+
+### Admin Team
+* Read and Write to all items
 
 ## Team Dashbaords
 * The can be found at `(ISorE_host)/dashboard/(team_color)`
