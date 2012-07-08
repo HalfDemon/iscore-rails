@@ -129,11 +129,22 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   - Their Services Status
   - Anomalies created by the Green Team
   - Comments about their reports
+  - Green Team Usablity checks once published
 
 ### Red Team
-
+  * Flags
+    - Status
+    - Capurted Flag (must have Capurted flag to change status)
+    - The real flag is hidden from view
 
 ### Green Team
+* Have write (and read)
+  - Useablity Reports
+  - Anomalies (Read Only)
+    * Points
+    * Respone
+* Have Read Access To:
+  - Anaomalies (the challange)
 
 ### Admin Team
 * Read and Write to all items
@@ -163,7 +174,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
   - `status` This is must be 0 or 1. 0 for being down. 1 for being up.
 
-  - `auth_token` The API token
+  - `auth_token` The API token (see the API section for more deatils)
 
 ## API
 * Some of the functions of IScorE are accessable and/ or use the API to the task they were designed to do.
