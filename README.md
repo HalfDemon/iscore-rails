@@ -120,7 +120,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 * If the user is one of red, green, blue, or white teams he or she will only be able 
   to access that area of ISorE-rails.
 
-* On the Blue Team Users only see their teams items
+* On the Blue Team Users only see their teams items during the allowed time
 
 * Admins have access to all
 
