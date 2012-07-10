@@ -31,7 +31,7 @@ Want to give back to iscore-rails? Follow theses steps
 8. Wait. The core team will look the changes. They may ask you to make some 
 changes. If they do move to step 9 (nine). If not your done
 9. If changes were requested please make the changes on the same topic branch and push them for your fork.
-
+10. Go back to Step 8, (repeat if needed)
 ## Team Descriptons ([from the Offical Iowa State Documention](https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf))
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
 teams must identify and defend against various security threats via the Competition network.
@@ -61,7 +61,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 ## IScorE-rails Terms
 * Document - A documention for the White and Green Teams or other purposes.
 
-* Anomalies - A optional chanllages made by the Green Team Leader. This will give Blue Teams additanal points.
+* Anomalies - A optional, or not, chanllages made by the Green Team Leader. This will give Blue Teams additanal points.
 
 * Green Team Usability Reports: These are manully checks by the Green Team to test the Blue Teams'
   Services. These forms will need changed for each year of your CDC.
@@ -203,6 +203,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 * If you are using the service scanner and change API token **YOU WILL BREAK IT**
 
 * If you are using an third party service and change the API token **YOU WILL** break things
+
 
 * The API is versioned currenly we are on version 1 (one) of the api.
 
