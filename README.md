@@ -210,4 +210,4 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 * The API can be found at `(IScorE_host)/api/v1/`
 
 ## Scoring
-* Scoring is the very heart of IScorE
+* Scoring is the very heart of IScorE-rails
