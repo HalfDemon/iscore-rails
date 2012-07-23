@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>IScorE-rails by Mab879</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>IScorE-rails</h1>
+        <p>IScorE-rails is a rails version of iscore that is used at Cyber Defense Competitions. You SHOULD NOT use this for production. This project IS NOT associated in ANY way to the original creators of iscore.  </p>
+        <p class="view"><a href="https://github.com/Mab879/iscore-rails">View the Project on GitHub <small>Mab879/iscore-rails</small></a></p>
+        <ul>
+          <li><a href="https://github.com/Mab879/iscore-rails/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Mab879/iscore-rails/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Mab879/iscore-rails">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Welcome to IScorE-rails</h1>
+
+<p>IScorE-rails is a Cyber Denfense Competition scoring system.</p>
+
+<p><a href="http://travis-ci.org/Mab879/iscore-rails"><img src="https://secure.travis-ci.org/Mab879/iscore-rails.png?branch=master" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/Mab879/iscore-rails/"><img src="https://codeclimate.com/badge.png" alt="Code Climate"></a></p>
+
+<p>This applcation uses the Iowa State and IT-Adventures Cyber
+Defense Cyber Defense Competition structure and naming 
+conventions. Please feel free to fork the project and
+change the names for your type of Cyber Defense Competition.</p>
+
+<p><strong>PLEASE NOTE</strong>: ISorE-rails is based off the rules, scoring, etc. from the 2012 IT-Adventures 
+competition. Please change this application for YOUR CDC.</p>
+
+<p><strong>ANOTHER NOTE:</strong> Please take note that most of have is descriped below isn't created yet. The point of this
+README is to tell you what ISorE-rails is and the the people who work on this project what the should 
+be doing and how.</p>
+
+<h2>Contributing</h2>
+
+<p>Want to give back to iscore-rails? Follow theses steps</p>
+
+<ol>
+<li>Clone the Repo from the <a href="https://github/mab879/iscore-rails">main repo</a>
+</li>
+<li>Fork the repo</li>
+<li>Make a title branh for your changes</li>
+<li>Make your changes</li>
+<li>Make serval commits for change (not required, but helpful)
+
+<ul>
+<li>Break down your change into logical steps </li>
+</ul>
+</li>
+<li>Push the changes to your fork</li>
+<li>Submit a pull request</li>
+<li>Wait. The core team will look the changes. They may ask you to make some 
+changes. If they do move to step 9 (nine). If not your done</li>
+<li>If changes were requested please make the changes on the same topic branch and push them for your fork.</li>
+<li>Go back to Step 8, (repeat if needed)
+## Team Descriptons (<a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">from the Offical Iowa State Documention</a>)</li>
+<li>Blue Teams - Competitors playing the role of the Information Assurance community.  These
+teams must identify and defend against various security threats via the Competition network.</li>
+</ol><ul>
+<li><p>Red Team - Comprised of professionals from the Information Assurance community playing the
+role of hackers.  This team must create and implement various attack strategies against the Blue
+Teams, and capture flags from the Blue Team servers.</p></li>
+<li><p>White Team - Comprised of respected individuals from the Information Assurance community.
+This team is the judging authority for the CDC.</p></li>
+<li><p>Green Team - This team consists of members with various computer familiarity and skill levels.
+They play the role of typical network users.  The Green Team duties include regular Internet
+usage and the execution of predefined anomalies.</p></li>
+</ul><h2>Terms Glossery (<a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">from the Offical Iowa State Documention</a>)</h2>
+
+<ul>
+<li><p>Flag - a ncrypted file placed in a predefined location.  The Red Team much capture these
+flags from or plant them onto teams’ systems.</p></li>
+<li><p>Anomalies - These events are injected into the system at various times throughout the
+competition.  The Anomalies are designed to test, or simply just complicate, the Blue Team
+duties during the competition.  </p></li>
+<li><p>CDC Director - Oversees the operation of the CDC, leads the White
+Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams.</p></li>
+</ul><h2>IScorE-rails Terms</h2>
+
+<ul>
+<li><p>Document - A documention for the White and Green Teams or other purposes.</p></li>
+<li><p>Anomalies - A optional, or not, chanllages made by the Green Team Leader. This will give Blue Teams additanal points.</p></li>
+<li><p>Green Team Usability Reports: These are manully checks by the Green Team to test the Blue Teams'
+Services. These forms will need changed for each year of your CDC.
+The IScorE-rails will use the 2012 IT-Adventures Cyber Defense. The checks
+have check boxs. You check if the service is up and don't if it isn't. It
+is also recommend to add a comment about each outage.</p></li>
+</ul><h2>Flags</h2>
+
+<ul>
+<li><p>Flags are made by Competion Director. The Read Team will marks theses flags as captured when the discover them.
+The will enter the flag into the text field on the flag page for later verifition. </p></li>
+<li><p>Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
+field, to able back points, up to half. These will be judged by the Red and White teams.</p></li>
+</ul><h2>Intrusion Reports</h2>
+
+<ul>
+<li><p>Intrusion reports are periodic reports that are submitted by the Blue Teams. </p></li>
+<li><p>This report is where the teams will tell what isn't or is happening with there networks and services.</p></li>
+<li><p>These are juged by the White Team</p></li>
+<li><p>Only one report per reporting period.</p></li>
+</ul><h2>Green Team Usability Reports</h2>
+
+<ul>
+<li><p>Started by Green Team Leader</p></li>
+<li><p>Then Started only Green Team Memebers can see theses scores and edit theme</p></li>
+<li><p>The score will be released to Blue Teams after all reports are done and 
+the scores are released by Green Team Leader</p></li>
+</ul><h2>Anomalies</h2>
+
+<ul>
+<li><p>Created by the Green Team Leader</p></li>
+<li><p>Done by the Blue Team </p></li>
+<li><p>Juged by the Green Team Leaders and/ or members</p></li>
+</ul><h2>Documentaion</h2>
+
+<ul>
+<li><p>Created by Blue Teams</p></li>
+<li><p>Used by Green and White Teams, or others as you see fit</p></li>
+<li><p>Juged by Green and White Teams, again as you see fit</p></li>
+</ul><h2>Perimisions</h2>
+
+<ul>
+<li><p>Each User has a Team membership to a team. </p></li>
+<li>
+<p>It will be to one of the following:</p>
+
+<ul>
+<li>Blue </li>
+<li>Green</li>
+<li>Red</li>
+<li>White</li>
+<li>Admin: Access to all teams</li>
+</ul>
+</li>
+<li><p>If the user is one of red, green, blue, or white teams he or she will only be able 
+to access that area of ISorE-rails.</p></li>
+<li><p>On the Blue Team Users only see their teams items during the allowed time</p></li>
+<li><p>Admins have access to all</p></li>
+<li><p>These are defined in <code>app/models/ability.rb</code>.</p></li>
+<li><p>Authorization is done by <a href="https://github.com/ryanb/cancan/">CanCan</a> by <a href="https://github.com/ryanb">Ryan Bates</a></p></li>
+<li><p>Authentication is handle, by default, is username and password model. Password are in encrypted via BCrypt. 
+Methods that are used are provioded by Ruby on Rails' <code>has_secure_password</code> methods. </p></li>
+</ul><h2>Team Acess</h2>
+
+<h3>Blue Teams</h3>
+
+<ul>
+<li>Have access write (and read) access to:
+
+<ul>
+<li>Their Green Team Anaoiles respones</li>
+<li>Their Flag earn back reports, after the flag was taken</li>
+<li>Their Periodic Intrusion reports BEFORE the Deadline</li>
+</ul>
+</li>
+<li>Have read access to 
+
+<ul>
+<li>Their Flag Status</li>
+<li>Their Score</li>
+<li>Their Services Uptime</li>
+<li>Their Services Status</li>
+<li>Anomalies created by the Green Team</li>
+<li>Comments about their reports</li>
+<li>Green Team Usablity checks once published</li>
+</ul>
+</li>
+</ul><h3>Red Team</h3>
+
+<ul>
+<li>Flags
+
+<ul>
+<li>Status</li>
+<li>Capurted Flag (must have Capurted flag to change status)</li>
+<li>The real flag is hidden from view</li>
+</ul>
+</li>
+</ul><h3>Green Team</h3>
+
+<ul>
+<li>Have write (and read)
+
+<ul>
+<li>Useablity Reports</li>
+<li>Anomalies (Read Only)</li>
+<li>Points</li>
+<li>Respone</li>
+</ul>
+</li>
+<li>Have Read Access To:
+
+<ul>
+<li>Anaomalies (the challange)</li>
+</ul>
+</li>
+</ul><h3>Admin Team</h3>
+
+<ul>
+<li>Read and Write to all items</li>
+</ul><h2>Team Dashbaords</h2>
+
+<ul>
+<li><p>The can be found at <code>(ISorE_host)/dashboard/(team_color)</code></p></li>
+<li><p>Access is restricted by the rules above</p></li>
+</ul><h2>Service checks</h2>
+
+<ul>
+<li><p>The SCANNER currenly NOT apart of IScorE-rails</p></li>
+<li><p>Might make our own later as differnt project</p></li>
+<li><p>If you want service scores, update status, etc you will need to intergate / roll your own</p></li>
+<li><p>If you roll your own please note the following</p></li>
+<li><p>IScorE-rails expects thats you give it the infomation like so</p></li>
+<li>
+<p><code>(ISorE_host)/api/v1/uptime/add/(site_number)/(service_name_id)/(status)/(auth_token)</code></p>
+
+<ul>
+<li>
+<code>site_number</code> =  The owner of the service that is being checked. If you where checking Site 1 it would be 1</li>
+<li>
+<code>service_name_id</code> The id of the service that is being checked. These are stored in the services model. 
+the ids are listed in the admin sectiaon.</li>
+<li>
+<code>status</code> This is must be 0 or 1. 0 for being down. 1 for being up.</li>
+<li>
+<code>auth_token</code> The API token (see the API section for more deatils)</li>
+</ul>
+</li>
+</ul><h2>API</h2>
+
+<ul>
+<li><p>Some of the functions of IScorE are accessable and/ or use the API to the task they were designed to do.</p></li>
+<li><p>To use the API use must be a member of the admin team.</p></li>
+<li><p>There is ONE, API key for the whole App.</p></li>
+<li><p>If you reset the API token <strong>YOU WILL BREAK EVERYTHING THAT USES IT. YES, REALLY</strong>. </p></li>
+<li><p>If you are using the service scanner and change API token <strong>YOU WILL BREAK IT</strong></p></li>
+<li><p>If you are using an third party service and change the API token <strong>YOU WILL</strong> break things</p></li>
+<li><p>The API is versioned currenly we are on version 1 (one) of the api.</p></li>
+<li><p>The API can be found at <code>(IScorE_host)/api/v1/</code></p></li>
+</ul><h2>Scoring</h2>
+
+<ul>
+<li>Scoring is the very heart of IScorE-rails</li>
+</ul>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/Mab879">Mab879</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-33602012-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
