@@ -10,10 +10,10 @@ Defense Cyber Defense Competition structure and naming
 conventions. Please feel free to fork the project and
 change the names for your type of Cyber Defense Competition.
 
-PLEASE NOTE: ISorE-rails is based off the rules, scoring, etc. from the 2012 IT-Adventures 
+**PLEASE NOTE**: ISorE-rails is based off the rules, scoring, etc. from the 2012 IT-Adventures 
 competition. Please change this application for YOUR CDC.
 
-ANOTHER NOTE: Please take note that most of have is descriped below isn't created yet. The point of this
+**ANOTHER NOTE:** Please take note that most of have is descriped below isn't created yet. The point of this
 README is to tell you what ISorE-rails is and the the people who work on this project what the should 
 be doing and how.
 
