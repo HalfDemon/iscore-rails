@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120623205547) do
+ActiveRecord::Schema.define(:version => 20120726050315) do
 
   create_table "sites", :force => true do |t|
     t.string   "name",                        :null => false
@@ -29,14 +29,15 @@ ActiveRecord::Schema.define(:version => 20120623205547) do
 
   create_table "users", :force => true do |t|
     t.string   "username",                           :null => false
-    t.string   "name",                               :null => false
+    t.string   "name"
     t.integer  "site_id"
     t.string   "password_digest",                    :null => false
     t.boolean  "admin",           :default => false
     t.string   "team",                               :null => false
-    t.string   "email",                              :null => false
+    t.string   "email"
     t.datetime "created_at",                         :null => false
     t.datetime "updated_at",                         :null => false
+    t.string   "remember_token"
   end
 
   add_index "users", ["admin"], :name => "index_users_on_admin"
