@@ -40,6 +40,9 @@ RSpec.configure do |config|
 
   # Factroy Girl Stuff
   config.include FactoryGirl::Syntax::Methods
+  def test_sign_in(user)
+    controller.sign_in(user)
+  end
 
 end
 
