@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
-  validates :email, format: { with: VALID_EMAIL_REGEX }
+  validates :email, format: { with: VALID_EMAIL_REGEX }, allow_blank: true, uniqueness: { case_sensitive: false }
 
   TEAMS = ["Red", "White", "Green", "Blue", "Admin"]
 
