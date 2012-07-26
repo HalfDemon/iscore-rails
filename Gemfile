@@ -36,8 +36,10 @@ group :development, :test do
 	gem 'guard-unicorn'
 	gem 'factory_girl_rails', '3.5.0'
 	gem 'guard-rails_best_practices'
-	gem 'webrat'
+	gem 'capybara'
+        gem 'capybara-webkit'
   	gem 'sqlite3'
+	gem 'rack-mini-profiler'
 end
 
 gem 'simple_form'
