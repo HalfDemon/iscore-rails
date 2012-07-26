@@ -1,3 +1,5 @@
+require 'api_constraints'
+
 Iscore::Application.routes.draw do
   get "sessions/new"
 
@@ -9,6 +11,12 @@ Iscore::Application.routes.draw do
 
   match '/sign_in', to: 'sessions#new'
   match 'sign_out', to: 'sessions#destroy'
+
+  namespace :api, defaults: {format: 'json'} do
+    namespace :v1 do
+      resources :sites
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
