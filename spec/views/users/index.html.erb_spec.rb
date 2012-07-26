@@ -28,7 +28,6 @@ describe "users/index" do
     assert_select "tr>td", :text => "Username".to_s, :count => 2
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => nil.to_s, :count => 2
-    assert_select "tr>td", :text => "Password Digest".to_s, :count => 2
     assert_select "tr>td", :text => false.to_s, :count => 2
     assert_select "tr>td", :text => "Team".to_s, :count => 2
   end

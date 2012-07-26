@@ -17,9 +17,5 @@ describe "users/show" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Username/)
     rendered.should match(/Name/)
-    rendered.should match(//)
-    rendered.should match(/Password Digest/)
-    rendered.should match(/false/)
-    rendered.should match(/Team/)
   end
 end

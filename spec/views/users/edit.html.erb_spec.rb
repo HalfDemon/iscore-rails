@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe "users/edit" do
   before(:each) do
+    @current_user = create(:user)
+    session[:user_id] = @current_user.id
     @user = assign(:user, stub_model(User,
       :username => "MyString",
       :name => "MyString",
@@ -20,7 +22,6 @@ describe "users/edit" do
       assert_select "input#user_username", :name => "user[username]"
       assert_select "input#user_name", :name => "user[name]"
       assert_select "input#user_site", :name => "user[site]"
-      assert_select "input#user_password_digest", :name => "user[password_digest]"
       assert_select "input#user_admin", :name => "user[admin]"
       assert_select "input#user_team", :name => "user[team]"
     end

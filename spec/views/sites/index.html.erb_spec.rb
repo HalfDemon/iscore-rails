@@ -6,8 +6,8 @@ describe "sites/index" do
       stub_model(Site,
         :name => "Name",
         :organization => "Organization",
-        :points => "",
-        :number => "Number"
+        :points => "0",
+        :number => "1"
       ),
       stub_model(Site,
         :name => "Name",
@@ -21,9 +21,10 @@ describe "sites/index" do
   it "renders a list of sites" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "Name".to_s, :count => 2
-    assert_select "tr>td", :text => "Organization".to_s, :count => 2
-    assert_select "tr>td", :text => "".to_s, :count => 2
-    assert_select "tr>td", :text => "Number".to_s, :count => 2
+    assert_select "tr>td"
+    assert_select "tr>td", text: "Site 1: Name".to_s
+    assert_select "tr>td", text: "0".to_s
+    assert_select "tr>td"
+    assert_select "tr>td"
   end
 end
