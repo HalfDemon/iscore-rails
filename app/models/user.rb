@@ -43,38 +43,6 @@ class User < ActiveRecord::Base
   	def admin?
   		self.admin == true
   	end
-
-    def red?
-      if self.team == "Red"
-        true
-      else
-        false
-      end     
-    end
-
-    def white?
-      if self.team == "White"
-        true
-      else
-        false
-      end     
-    end
-
-    def green?
-      if self.team == "Green"
-        true
-      else
-        false
-      end     
-    end
-
-    def blue?
-     if self.team == "Blue"
-        true
-      else
-        false
-      end     
-    end
   end
 
   private
