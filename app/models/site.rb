@@ -11,7 +11,7 @@ class Site < ActiveRecord::Base
   validates_presence_of :name, :number, :organization
 
 
-  validates_uniqueness_of :number
+  validates_uniqueness_of :number, :name
 
   
   before_create :set_default_values

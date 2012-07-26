@@ -21,9 +21,9 @@
 #
 # 
 class User < ActiveRecord::Base
-  attr_accessible :name, :username, :password, :email, :team, :site_id
+  attr_accessible :name, :username, :password, :email, :team, :site_id, :admin
 
-  validates_presence_of :username, :password, :team, :site
+  validates_presence_of :username, :password, :team
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -31,11 +31,9 @@ class User < ActiveRecord::Base
 
   TEAMS = ["Red", "White", "Green", "Blue", "Admin"]
 
-  before_save { |user| user.email = email.downcase }
 
-  before_save { |user| user.email = username.downcase }
+  before_save :create_remember_token, :downcase_username, :downcase_email
 
-  before_save :create_remember_token
  
   has_secure_password
 
@@ -47,19 +45,35 @@ class User < ActiveRecord::Base
   	end
 
     def red?
-      self.team == "Red"
+      if self.team == "Red"
+        true
+      else
+        false
+      end     
     end
 
     def white?
-      self.team == "White"
+      if self.team == "White"
+        true
+      else
+        false
+      end     
     end
 
     def green?
-      self.team == "Green"
+      if self.team == "Green"
+        true
+      else
+        false
+      end     
     end
 
     def blue?
-      self.team == "Blue"
+     if self.team == "Blue"
+        true
+      else
+        false
+      end     
     end
   end
 
@@ -67,5 +81,15 @@ class User < ActiveRecord::Base
 
     def create_remember_token
       self.remember_token = SecureRandom.urlsafe_base64
+    end
+
+    def downcase_username
+      self.username = self.username.downcase
+    end
+
+    def downcase_email
+      if self.email
+        self.email = self.email.downcase
+      end
     end
 end

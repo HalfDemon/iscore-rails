@@ -12,14 +12,16 @@ describe User do
   it { should respond_to(:password) }
   it { should respond_to(:team) }
   it { should respond_to(:email) }
+  it { should respond_to (:admin?) }
 
 
+  describe "username with mixed case" do
+    let(:mixed_case_username) { "BilLiyBoBJoThEThIrD" }
 
-  describe "accessible attributes" do
-    it "should not allow access to admin" do
-      expect do
-        User.new(admin: true)
-      end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
+    it "should be saved as all lower-case" do
+      @user.username = mixed_case_username
+      @user.save
+      @user.reload.username.should == mixed_case_username.downcase
     end
   end
 end
