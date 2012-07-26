@@ -19,12 +19,21 @@ require 'spec_helper'
 # that an instance is receiving a specific message.
 
 describe UsersController do
+  before(:each) do
+    @site = Site.new(name: "Hello Worlders", organization: "DCG", number: 1)
+  end
 
   # This should return the minimal set of attributes required to create a valid
   # User. As you add validations to User, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {
+      username: "Matthew",
+      password: "foobar",
+      team: "Blue",
+      site_id: @site.id
+
+    }
   end
   
   # This should return the minimal set of values that should be in the session
