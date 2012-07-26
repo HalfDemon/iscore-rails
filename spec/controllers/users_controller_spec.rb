@@ -20,7 +20,7 @@ require 'spec_helper'
 
 describe UsersController do
   before(:each) do
-    @site = Site.new(name: "Hello Worlders", organization: "DCG", number: 1)
+    @site = create(:site)
   end
 
   # This should return the minimal set of attributes required to create a valid

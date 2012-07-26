@@ -1,6 +1,20 @@
 require 'api_constraints'
 
 Iscore::Application.routes.draw do
+  get "home/index"
+
+  get "home/about"
+
+  get "dashboard/index"
+
+  get "dashboard/blue"
+
+  get "dashboard/green"
+
+  get "dashboard/red"
+
+  get "dashboard/white"
+
   get "sessions/new"
 
   resources :sites
@@ -11,7 +25,7 @@ Iscore::Application.routes.draw do
 
   match '/sign_in', to: 'sessions#new'
   match 'sign_out', to: 'sessions#destroy'
-
+  root to: "home#index"
   namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
       resources :sites
