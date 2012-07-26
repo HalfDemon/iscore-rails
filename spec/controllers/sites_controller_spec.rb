@@ -25,8 +25,9 @@ describe SitesController do
   # update the return value of this method accordingly.
   def valid_attributes
     {
-      name: "Problem?"
-
+      name: "Problem?",
+      number: 1,
+      organization: "Iowa State University"
     }
   end
   
