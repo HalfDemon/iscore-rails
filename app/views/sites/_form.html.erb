@@ -2,13 +2,13 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :organization %>
-    <%= f.input :points %>
-    <%= f.input :number %>
+    <%= f.input :name, placeholder: "BlueSu" %>
+    <%= f.input :organization, placeholder: "Iowa State University" %>
+    <%= f.input :points, hint: "When creating the teams this should be zero" %>
+    <%= f.input :number, class: "input-small", placeholder: "1" %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
   </div>
 <% end %>
