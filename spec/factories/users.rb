@@ -2,11 +2,18 @@
 
 FactoryGirl.define do
   factory :user do
-    username "MyString"
-    name "MyString"
-    site nil
-    password_digest "MyString"
+    username "mburket"
+    name "Matthew Burket"
+    password "MyString"
     admin false
-    team "MyString"
+    team "Blue"
+  end
+
+  factory :admin_user, class: User do
+    username "mburket"
+    name "Matthew Burket"
+    password "MyString"
+    admin true
+    team "Blue"
   end
 end
