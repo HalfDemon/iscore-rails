@@ -21,6 +21,8 @@ require 'spec_helper'
 describe UsersController do
   before(:each) do
     @site = create(:site)
+    @current_user = create(:admin_user)
+    session[:user_id] = @current_user.id
   end
 
   # This should return the minimal set of attributes required to create a valid
@@ -135,6 +137,7 @@ describe UsersController do
         response.should redirect_to(user)
       end
     end
+  end
 
     describe "with invalid params" do
       it "assigns the user as @user" do
@@ -153,7 +156,6 @@ describe UsersController do
         response.should render_template("edit")
       end
     end
-  end
 
   describe "DELETE destroy" do
     it "destroys the requested user" do
