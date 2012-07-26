@@ -10,9 +10,29 @@
  *
  */
 
- @import "bootstrap";
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import 'font-awesome';
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
 #body-wrapper {
 	margin: 90px;
+
+		a [class^="icon-"]:before, [class*=" icon-"]:before {
+		font-size:15px;
+		color:#fff;
+	}
+
+
 }
+
+.brand {
+	font-family: 'Lobster', cursive;
+
+	a [class^="icon-"]:before, [class*=" icon-"]:before {
+		font-size:24px;
+		color:#fff;
+	}
+}
+
 
