@@ -2,7 +2,7 @@ class SitesController < ApplicationController
   # GET /sites
   # GET /sites.json
   def index
-    @sites = Site.all
+    @sites = Site.order("points DESC").all
 
     respond_to do |format|
       format.html # index.html.erb
