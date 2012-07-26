@@ -38,6 +38,9 @@ RSpec.configure do |config|
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
 
+  # Factroy Girl Stuff
+  config.include FactoryGirl::Syntax::Methods
+
 end
 
 Spork.each_run do
