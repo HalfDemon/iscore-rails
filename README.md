@@ -173,19 +173,25 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 This section talks about the starting and ending times of the CDC
 
 Before the CDC beings the follow is allowed:
-	* Admins
-		* Access to all
-	* Blue Teams
-		* Read-Only all objects expect:
-			* Documention
+  * Admins
+	* Access to all
+  * Blue Teams
+   * Read-Only all objects expect:
+     * Documention
 	* Red Team
-		* All Access is deined
+      * All Access is denied
 	* Green Team
-		* All access is denied
+     * All Access is denied
 	* White Team
-		* Read access to all
-		* Write access to sites
-		* Write acesss to users
+      * Read access to all
+      * Write access to sites
+      * Write acesss to users
+		
+During the CDC the permissions allow above.
+
+After the CDC the permissions are the same expect for:
+  * Blue Team
+    * All Access is denied
 
 ## Service checks
 * The SCANNER currenly NOT apart of IScorE-rails
