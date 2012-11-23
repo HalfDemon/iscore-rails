@@ -1,0 +1,9 @@
+%nav
+  .navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        = link_to "IScorE", root_url, class: "brand"
+        %ul.nav
+          %li= link_to raw('<i class="icon-home" style="color:#fff; font-size:24px;"></i> Home'), root_url
+          %li= link_to raw('<i class="icon-group" style="color:#fff; font-size:24px;"></i> Sites'), sites_url
+          %li= link_to raw('<i class="icon-user" style="color:#fff; font-size:24px;"></i> Users'), users_url

@@ -1,0 +1,9 @@
+= simple_form_for(@site) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :name, placeholder: "BlueSu"
+    = f.input :organization, placeholder: "Iowa State University"
+    = f.input :points, hint: "When creating the teams this should be zero"
+    = f.input :number, class: "input-small", placeholder: "1"
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'

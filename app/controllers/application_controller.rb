@@ -8,10 +8,30 @@ class ApplicationController < ActionController::Base
   end
 
 # Config
+#
+# CDC Name
+#
+# This is name of the cdc
+# this will used through
+# the app. 
 $cdc_name = "Sample CDC"
-# This MUST be in the time zone that Rails is set in
-# this can be chanaged in the <tt>config/application.rb</tt>
-# A List of time zones can be found by runiing
-# <tt>rake -D time</td>
-$cdc_start_date_time_server_time 
+#
+# CDC Start Time
+# Start Time of CDC
+# This when the cdc starts
+# this will unlock all
+# parts of the app
+# You will want to hard
+# code these since using the
+# sample code will result 
+# in a endless CDC
+$cdc_start_name = Chronic.parse("8 hours ago")
+# 
+# CDC End Time
+# This is when the compition closes
+# You will want to hard
+# code these since using the
+# sample code will result 
+# in a endless CDC
+$cdc_end_name = Chronic.parse("2 hours from now")
 end

@@ -1,6 +1,6 @@
 module ApplicationHelper
-	def full_title
-		base_title = "Assign It App"
+	def title
+		base_title = $cdc_name
 		if page_title.empty?
 			base_title
 		else

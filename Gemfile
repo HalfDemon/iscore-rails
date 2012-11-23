@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
+gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'haml'
 
 group :development, :test do
 	gem 'rspec-rails', '~> 2.10.1'
@@ -33,11 +34,9 @@ group :development, :test do
 	gem 'guard-rails', '~> 0.1.0'
 	#gem 'guard-brakeman'
 	gem 'guard-migrate'
-	gem 'guard-unicorn'
 	gem 'factory_girl_rails', '3.5.0'
 	gem 'guard-rails_best_practices'
 	gem 'capybara'
-        gem 'capybara-webkit'
   	gem 'sqlite3'
 	gem 'rack-mini-profiler'
 end
@@ -58,7 +57,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn'
+# gem 'unicorn'
 
 # Thin is Cool
 gem 'thin'

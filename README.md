@@ -169,6 +169,24 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Access is restricted by the rules above
 
+## Competion Time
+This section talks about the starting and ending times of the CDC
+
+Before the CDC beings the follow is allowed:
+	* Admins
+		* Access to all
+	* Blue Teams
+		* Read-Only all objects expect:
+			* Documention
+	* Red Team
+		* All Access is deined
+	* Green Team
+		* All access is denied
+	* White Team
+		* Read access to all
+		* Write access to sites
+		* Write acesss to users
+
 ## Service checks
 * The SCANNER currenly NOT apart of IScorE-rails
 
