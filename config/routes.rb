@@ -1,6 +1,9 @@
 require 'api_constraints'
 
 Iscore::Application.routes.draw do
+  resources :flags
+
+
   get "home/index"
 
   get "home/about"

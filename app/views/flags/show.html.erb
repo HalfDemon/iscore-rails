@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @flag.content %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @flag.site %>
+</p>
+
+<p>
+  <b>Captured:</b>
+  <%= @flag.captured %>
+</p>
+
+<p>
+  <b>Captured flag:</b>
+  <%= @flag.captured_flag %>
+</p>
+
+<p>
+  <b>Earned back points:</b>
+  <%= @flag.earned_back_points %>
+</p>
+
+<p>
+  <b>Earned back:</b>
+  <%= @flag.earned_back %>
+</p>
+
+
+<%= link_to 'Edit', edit_flag_path(@flag) %> |
+<%= link_to 'Back', flags_path %>
