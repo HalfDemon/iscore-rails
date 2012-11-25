@@ -97,15 +97,15 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
   * Special Instructions : Anything special that this 
 ####  Intrusion Report Submit (this is what teams submit)
-  * content : What the team said
+  * `content` : What the team said
 
-  * read : Has the team's report been ready yet
+  * `read` : Has the team's report been ready yet
 
-  * points_earned : How many points did they earns
+  * `points_earned` : How many points did they earns
 
-  * site_id : What site made the report
+  * `site_id` : What site made the report
 
-  * intrusion_report_id : What report / time period is the submission for
+  * `intrusion_report_id` : What report / time period is the submission for
 
 ## Green Team Usability Reports
 * Started by Green Team Leader
@@ -259,14 +259,14 @@ After the CDC the permissions are the same expect for:
 * Scoring is the very heart of IScorE-rails
 
 ### Schmea
-* site_id
+* `site_id`
 
-* earned_points
+* `earned_point` : interger
 
-* possible_points
+* `possible_points` : interger
 
-* published :  Can the blue teams see it : boolean
+* `published` : Can the blue teams see it : boolean
 
-* type
+* `type` : What type points are these : string
 
-* reason : What were point(s) awared: requred if penilty 
+* `reason` : What were point(s) awared: requred if penilty 
