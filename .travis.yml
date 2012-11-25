@@ -7,4 +7,4 @@ before_install:
 before_script:
   - "bundle exec rake db:migrate"
   
-script: "rake spec/"
+script: "rspec spec/"
