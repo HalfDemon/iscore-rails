@@ -16,6 +16,8 @@ class Site < ActiveRecord::Base
   
   before_create :set_default_values
 
+  has_many :flags
+
   def set_default_values
     self.points = 0
   end
