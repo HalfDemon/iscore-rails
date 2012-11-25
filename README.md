@@ -94,36 +94,36 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   * Required
   * `string`
   * The Name of the report 
-  
-  * This should named Report for X AM / PM. 
-  	* Where x is the time due
-  * `start_time`
-  	* required
-  	* `datetime`
-  	* The time that teams are submit the report
+  	* This should named Report for X AM / PM. 
+  		* Where x is the time due
+
+ * `start_time`
+  * required
+  * `datetime`
+  * The time that teams are submit the report
   	
-  * `due_time`
-  	* requried
-  	* `datetime`
-  	* The time that must sumbit the report by
+ * `due_time`
+  * requried
+  * `datetime`
+  * The time that must sumbit the report by
 
-  * Special Instructions : Anything special that this 
+ * Special Instructions : Anything special that this 
 ####  Intrusion Report Submissions (intrusion_report_submission)
-  * `content`
-  	* required
-  		* What the team said
-  * `read`  
-   	* can't be true on create
-  	* Has the team's report been ready yet by the white team
+* `content`
+	* required
+	* What the team said
+* `read`  
+	* can't be true on create
+  * Has the team's report been ready yet by the white team
 
-  * `points_earned`
-  	* How many points did they earn
+ * `points_earned`
+  * How many points did they earn
 
-  * `site_id` 
-  	* What site made the report
+ * `site_id` 
+  * What site made the report
 
-  * `intrusion_report_id` 
-  	* What report / time period is the submission for
+ * `intrusion_report_id` 
+  * What report / time period is the submission for
 
 ## Green Team Usability Reports
 * Started by Green Team Leader
@@ -134,7 +134,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   the scores are released by Green Team Leader
 
 ### Schema
-#### Usability Reports (usability_report)
+#### Usability Reports (`usability_report`)
 * `name`
 	* required
 	* `string`
@@ -145,32 +145,41 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 			* Monday Morning Check
 			* 3:00 PM Check
 		* It's really up leaders to the compeition
+
 * `start_time`
 	* required
 	* `datetime`
 	* When Green Team Members can start submiting reports
+
 * `due_date`
 	* not required on create, needed to publish
 	* `datetime`
 	*  It is recommend **NOT** to set this until time to publish
-* published
+
+* `published`
 	* required to be false on create
 	* boolean
 	* It it added to blue teams scores
 
-#### Usability Reports Submission (usability_reports_submission)
+
+#### Usability Reports Submission (`usability_reports_submission`)
 * `site_id` 
 	* required
 	* `integer`
-* comment
 
-* done_by
+* `comment`
+	* not required
+	* `text`
+	* This field can used to desribe that wasn't working, etc.
+
+* `done_by`
 	* required
 	* `integer`
-	* What user sumbited this check
+	* What user (id) sumbited this check
+	
 * The checks that are need are a separate model
 
-#### Service 
+#### Service (`service`)
 * A tooltip will show these details on the Usability Reports
 * This is shared wit the the service scanner
 * `name`
