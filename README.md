@@ -89,23 +89,40 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 ### Schema
 ####   Intrusion Reports
-  * named: The Name of the report, This should named Report for X AM / PM. Where x is the time due
-
-  * start_time  : The time that teams are submit the report
-
-  * due_time :  The time that must sumbit the report by
+ * `name`
+  * Required
+  * `string`
+  * The Name of the report 
+  
+  * This should named Report for X AM / PM. 
+  	* Where x is the time due
+  * `start_time`
+  	* required
+  	* `datetime`
+  	* The time that teams are submit the report
+  	
+  * `due_time`
+  	* requried
+  	* `datetime`
+  	* The time that must sumbit the report by
 
   * Special Instructions : Anything special that this 
 ####  Intrusion Report Submit (this is what teams submit)
-  * `content` : What the team said
+  * `content`
+  	* required
+  		* What the team said
+  * `read`  
+   	* can't be true on create
+  	* Has the team's report been ready yet by the white team
 
-  * `read` : Has the team's report been ready yet
+  * `points_earned`
+  	* How many points did they earn
 
-  * `points_earned` : How many points did they earns
+  * `site_id` 
+  	* What site made the report
 
-  * `site_id` : What site made the report
-
-  * `intrusion_report_id` : What report / time period is the submission for
+  * `intrusion_report_id` 
+  	* What report / time period is the submission for
 
 ## Green Team Usability Reports
 * Started by Green Team Leader
@@ -114,6 +131,28 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * The score will be released to Blue Teams after all reports are done and 
   the scores are released by Green Team Leader
+
+### Schema
+#### Usability Reports (usability_report)
+* `name`
+	* required
+	* `string`
+	* Can be anything that descibes that report
+		* Examples
+			* Morning Check
+			* Check 1
+			* Monday Morning Check
+			* 3:00 PM Check
+		* It's really up leaders to the compeition
+* `start_time`
+	* required
+	* `datetime`
+	* When Green Team Members can start submiting reports
+* `due_date`
+	* not required on create, needed to publish
+	* `datetime`
+	*  It is recommend **NOT** to set this until time to publish
+
 
 ## Anomalies
 * Created by the Green Team Leader
