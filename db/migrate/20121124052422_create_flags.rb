@@ -5,7 +5,7 @@ class CreateFlags < ActiveRecord::Migration
       t.belongs_to :site
       t.boolean :captured
       t.text :captured_flag
-      t.interger :earned_back_points
+      t.integer :earned_back_points
       t.boolean :earned_back
 
       t.timestamps

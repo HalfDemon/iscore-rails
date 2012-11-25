@@ -3,7 +3,7 @@ class CreateSites < ActiveRecord::Migration
     create_table :sites do |t|
       t.string :name, null: false
       t.string :organization, null: false
-      t.intger :points, default: 0
+      t.integer :points, default: 0
       t.string :number, null: false
  	  t.datetime :last_sign_in
       t.timestamps
