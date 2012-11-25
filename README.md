@@ -139,12 +139,12 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 	* required
 	* `string`
 	* Can be anything that descibes that report
-		* Examples
+		- Examples
 			* Morning Check
 			* Check 1
 			* Monday Morning Check
 			* 3:00 PM Check
-		* It's really up leaders to the compeition
+	* It's really up leaders to the compeition
 * `start_time`
 	* required
 	* `datetime`
