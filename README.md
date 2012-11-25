@@ -18,20 +18,21 @@ README is to tell you what ISorE-rails is and the the people who work on this pr
 be doing and how.
 
 ## Contributing
-Want to give back to iscore-rails? Follow theses steps
+Want to give back to IScorE-rails? Follow theses steps
 
 1. Clone the Repo from the [main repo](https://github/mab879/iscore-rails)
-2. Fork the repo
-3. Make a title branh for your changes
+2. Fork the repo on your account
+3. Make a title branch for your changes
 4. Make your changes
 5. Make serval commits for change (not required, but helpful)
-	- Break down your change into logical steps 
+	- Break down your change into logical steps.
 6. Push the changes to your fork
-7. Submit a pull request
+7. Submit a pull request to the [main repo](https://github.com/Mab879/iscore-rails)
 8. Wait. The core team will look the changes. They may ask you to make some 
-changes. If they do move to step 9 (nine). If not your done
+changes. If they do move to step 9 (nine). If not you're done
 9. If changes were requested please make the changes on the same topic branch and push them for your fork.
 10. Go back to Step 8, (repeat if needed)
+
 ## Team Descriptons ([from the Offical Iowa State Documention](https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf))
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
 teams must identify and defend against various security threats via the Competition network.
