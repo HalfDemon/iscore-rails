@@ -108,7 +108,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   	* The time that must sumbit the report by
 
   * Special Instructions : Anything special that this 
-####  Intrusion Report Submit (this is what teams submit)
+####  Intrusion Report Submissions (intrusion_report_submission)
   * `content`
   	* required
   		* What the team said
@@ -153,6 +153,62 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 	* not required on create, needed to publish
 	* `datetime`
 	*  It is recommend **NOT** to set this until time to publish
+* published
+	* required to be false on create
+	* boolean
+	* It it added to blue teams scores
+
+#### Usability Reports Submission (usability_reports_submission)
+* `site_id` 
+	* required
+	* `integer`
+* comment
+
+* done_by
+	* required
+	* `integer`
+	* What user sumbited this check
+* The checks that are need are a separate model
+
+#### Service 
+* A tooltip will show these details on the Usability Reports
+* This is shared wit the the service scanner
+* `name`
+	* required
+	* `string`
+	* Name of Service
+	* Examples
+		* Web Server - WWW
+		* Web Server - FTP
+		* Remote Desktop - RDP
+		* Wiki Server - WWW
+* `port`
+	* required 
+	* `integer`
+	* What port is this service on
+	* Examples:
+		* 80
+		* 21
+		* 3389
+		* 22
+* `subdomain`
+	* required
+	* `string`
+	* What subdomain is it on
+	* Example
+		* www 
+			www.site1.cdc.com
+#### Usability Reports Check (usability_reports_check)		
+	`works`
+		* requred
+		* `boolean`
+		* Does the service work as expected
+	* `site_id`
+		* required
+		* integer 
+	* `service_id`
+		* required
+		* integer
 
 
 ## Anomalies
@@ -160,7 +216,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Done by the Blue Team 
 
-* Juged by the Green Team Leaders and/ or members
+* Judged by the Green Team Leaders and/ or members
 
 ## Documentaion
 * Created by Blue Teams
@@ -298,15 +354,15 @@ After the CDC the permissions are the same expect for:
 ## Scoring
 * Scoring is the very heart of IScorE-rails
 
-### Schmea
-* `site_id`
-
-* `earned_point` : interger
-
-* `possible_points` : interger
-
-* `published` : Can the blue teams see it : boolean
-
-* `type` : What type points are these : string
-
-* `reason` : What were point(s) awared: requred if penilty 
+	### Schmea
+	* `site_id`
+	
+	* `earned_point` : interger
+	
+	* `possible_points` : interger
+	
+	* `published` : Can the blue teams see it : boolean
+	
+	* `type` : What type points are these : string
+	
+	* `reason` : What were point(s) awared: requred if penilty (negtive earned_points value)
