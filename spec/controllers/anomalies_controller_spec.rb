@@ -21,7 +21,7 @@ require 'spec_helper'
 describe AnomaliesController do
 
   # This should return the minimal set of attributes required to create a valid
-  # Anomalie. As you add validations to Anomalie, be sure to
+  # Anomaly. As you add validations to Anomaly, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
     {}
@@ -36,67 +36,67 @@ describe AnomaliesController do
 
   describe "GET index" do
     it "assigns all anomalies as @anomalies" do
-      anomalie = Anomalie.create! valid_attributes
+      anomaly = Anomaly.create! valid_attributes
       get :index, {}, valid_session
-      assigns(:anomalies).should eq([anomalie])
+      assigns(:anomalies).should eq([anomaly])
     end
   end
 
   describe "GET show" do
-    it "assigns the requested anomalie as @anomalie" do
-      anomalie = Anomalie.create! valid_attributes
-      get :show, {:id => anomalie.to_param}, valid_session
-      assigns(:anomalie).should eq(anomalie)
+    it "assigns the requested anomaly as @anomaly" do
+      anomaly = Anomaly.create! valid_attributes
+      get :show, {:id => anomaly.to_param}, valid_session
+      assigns(:anomaly).should eq(anomaly)
     end
   end
 
   describe "GET new" do
-    it "assigns a new anomalie as @anomalie" do
+    it "assigns a new anomaly as @anomaly" do
       get :new, {}, valid_session
-      assigns(:anomalie).should be_a_new(Anomalie)
+      assigns(:anomaly).should be_a_new(Anomaly)
     end
   end
 
   describe "GET edit" do
-    it "assigns the requested anomalie as @anomalie" do
-      anomalie = Anomalie.create! valid_attributes
-      get :edit, {:id => anomalie.to_param}, valid_session
-      assigns(:anomalie).should eq(anomalie)
+    it "assigns the requested anomaly as @anomaly" do
+      anomaly = Anomaly.create! valid_attributes
+      get :edit, {:id => anomaly.to_param}, valid_session
+      assigns(:anomaly).should eq(anomaly)
     end
   end
 
   describe "POST create" do
     describe "with valid params" do
-      it "creates a new Anomalie" do
+      it "creates a new Anomaly" do
         expect {
-          post :create, {:anomalie => valid_attributes}, valid_session
-        }.to change(Anomalie, :count).by(1)
+          post :create, {:anomaly => valid_attributes}, valid_session
+        }.to change(Anomaly, :count).by(1)
       end
 
-      it "assigns a newly created anomalie as @anomalie" do
-        post :create, {:anomalie => valid_attributes}, valid_session
-        assigns(:anomalie).should be_a(Anomalie)
-        assigns(:anomalie).should be_persisted
+      it "assigns a newly created anomaly as @anomaly" do
+        post :create, {:anomaly => valid_attributes}, valid_session
+        assigns(:anomaly).should be_a(Anomaly)
+        assigns(:anomaly).should be_persisted
       end
 
-      it "redirects to the created anomalie" do
-        post :create, {:anomalie => valid_attributes}, valid_session
-        response.should redirect_to(Anomalie.last)
+      it "redirects to the created anomaly" do
+        post :create, {:anomaly => valid_attributes}, valid_session
+        response.should redirect_to(Anomaly.last)
       end
     end
 
     describe "with invalid params" do
-      it "assigns a newly created but unsaved anomalie as @anomalie" do
+      it "assigns a newly created but unsaved anomaly as @anomaly" do
         # Trigger the behavior that occurs when invalid params are submitted
-        Anomalie.any_instance.stub(:save).and_return(false)
-        post :create, {:anomalie => {}}, valid_session
-        assigns(:anomalie).should be_a_new(Anomalie)
+        Anomaly.any_instance.stub(:save).and_return(false)
+        post :create, {:anomaly => {}}, valid_session
+        assigns(:anomaly).should be_a_new(Anomaly)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
-        Anomalie.any_instance.stub(:save).and_return(false)
-        post :create, {:anomalie => {}}, valid_session
+        Anomaly.any_instance.stub(:save).and_return(false)
+        post :create, {:anomaly => {}}, valid_session
         response.should render_template("new")
       end
     end
@@ -104,59 +104,59 @@ describe AnomaliesController do
 
   describe "PUT update" do
     describe "with valid params" do
-      it "updates the requested anomalie" do
-        anomalie = Anomalie.create! valid_attributes
+      it "updates the requested anomaly" do
+        anomaly = Anomaly.create! valid_attributes
         # Assuming there are no other anomalies in the database, this
-        # specifies that the Anomalie created on the previous line
+        # specifies that the Anomaly created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Anomalie.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, {:id => anomalie.to_param, :anomalie => {'these' => 'params'}}, valid_session
+        Anomaly.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
+        put :update, {:id => anomaly.to_param, :anomaly => {'these' => 'params'}}, valid_session
       end
 
-      it "assigns the requested anomalie as @anomalie" do
-        anomalie = Anomalie.create! valid_attributes
-        put :update, {:id => anomalie.to_param, :anomalie => valid_attributes}, valid_session
-        assigns(:anomalie).should eq(anomalie)
+      it "assigns the requested anomaly as @anomaly" do
+        anomaly = Anomaly.create! valid_attributes
+        put :update, {:id => anomaly.to_param, :anomaly => valid_attributes}, valid_session
+        assigns(:anomaly).should eq(anomaly)
       end
 
-      it "redirects to the anomalie" do
-        anomalie = Anomalie.create! valid_attributes
-        put :update, {:id => anomalie.to_param, :anomalie => valid_attributes}, valid_session
-        response.should redirect_to(anomalie)
+      it "redirects to the anomaly" do
+        anomaly = Anomaly.create! valid_attributes
+        put :update, {:id => anomaly.to_param, :anomaly => valid_attributes}, valid_session
+        response.should redirect_to(anomaly)
       end
     end
 
     describe "with invalid params" do
-      it "assigns the anomalie as @anomalie" do
-        anomalie = Anomalie.create! valid_attributes
+      it "assigns the anomaly as @anomaly" do
+        anomaly = Anomaly.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
-        Anomalie.any_instance.stub(:save).and_return(false)
-        put :update, {:id => anomalie.to_param, :anomalie => {}}, valid_session
-        assigns(:anomalie).should eq(anomalie)
+        Anomaly.any_instance.stub(:save).and_return(false)
+        put :update, {:id => anomaly.to_param, :anomaly => {}}, valid_session
+        assigns(:anomaly).should eq(anomaly)
       end
 
       it "re-renders the 'edit' template" do
-        anomalie = Anomalie.create! valid_attributes
+        anomaly = Anomaly.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
-        Anomalie.any_instance.stub(:save).and_return(false)
-        put :update, {:id => anomalie.to_param, :anomalie => {}}, valid_session
+        Anomaly.any_instance.stub(:save).and_return(false)
+        put :update, {:id => anomaly.to_param, :anomaly => {}}, valid_session
         response.should render_template("edit")
       end
     end
   end
 
   describe "DELETE destroy" do
-    it "destroys the requested anomalie" do
-      anomalie = Anomalie.create! valid_attributes
+    it "destroys the requested anomaly" do
+      anomaly = Anomaly.create! valid_attributes
       expect {
-        delete :destroy, {:id => anomalie.to_param}, valid_session
-      }.to change(Anomalie, :count).by(-1)
+        delete :destroy, {:id => anomaly.to_param}, valid_session
+      }.to change(Anomaly, :count).by(-1)
     end
 
     it "redirects to the anomalies list" do
-      anomalie = Anomalie.create! valid_attributes
-      delete :destroy, {:id => anomalie.to_param}, valid_session
+      anomaly = Anomaly.create! valid_attributes
+      delete :destroy, {:id => anomaly.to_param}, valid_session
       response.should redirect_to(anomalies_url)
     end
   end

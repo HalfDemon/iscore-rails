@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "anomalies/show" do
   before(:each) do
-    @anomalie = assign(:anomalie, stub_model(Anomalie,
+    @anomaly = assign(:anomaly, stub_model(Anomaly,
       :name => "Name",
       :description => "MyText"
     ))

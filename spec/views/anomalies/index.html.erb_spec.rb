@@ -3,11 +3,11 @@ require 'spec_helper'
 describe "anomalies/index" do
   before(:each) do
     assign(:anomalies, [
-      stub_model(Anomalie,
+      stub_model(Anomaly,
         :name => "Name",
         :description => "MyText"
       ),
-      stub_model(Anomalie,
+      stub_model(Anomaly,
         :name => "Name",
         :description => "MyText"
       )

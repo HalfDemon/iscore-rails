@@ -2,7 +2,7 @@ class AnomaliesController < ApplicationController
   # GET /anomalies
   # GET /anomalies.json
   def index
-    @anomalies = Anomalie.all
+    @anomalies = Anomaly.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +13,7 @@ class AnomaliesController < ApplicationController
   # GET /anomalies/1
   # GET /anomalies/1.json
   def show
-    @anomaly = Anomalie.find(params[:id])
+    @anomaly = Anomaly.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,7 +24,7 @@ class AnomaliesController < ApplicationController
   # GET /anomalies/new
   # GET /anomalies/new.json
   def new
-    @anomaly = Anomalie.new
+    @anomaly = Anomaly.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,17 +34,17 @@ class AnomaliesController < ApplicationController
 
   # GET /anomalies/1/edit
   def edit
-    @anomaly = Anomalie.find(params[:id])
+    @anomaly = Anomaly.find(params[:id])
   end
 
   # POST /anomalies
   # POST /anomalies.json
   def create
-    @anomaly = Anomalie.new(params[:anomaly])
+    @anomaly = Anomaly.new(params[:anomaly])
 
     respond_to do |format|
       if @anomaly.save
-        format.html { redirect_to @anomaly, notice: 'Anomalie was successfully created.' }
+        format.html { redirect_to @anomaly, notice: 'Anomaly was successfully created.' }
         format.json { render json: @anomaly, status: :created, location: @anomaly }
       else
         format.html { render action: "new" }
@@ -56,11 +56,11 @@ class AnomaliesController < ApplicationController
   # PUT /anomalies/1
   # PUT /anomalies/1.json
   def update
-    @anomaly = Anomalie.find(params[:id])
+    @anomaly = Anomaly.find(params[:id])
 
     respond_to do |format|
       if @anomaly.update_attributes(params[:anomaly])
-        format.html { redirect_to @anomaly, notice: 'Anomalie was successfully updated.' }
+        format.html { redirect_to @anomaly, notice: 'Anomaly was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -72,7 +72,7 @@ class AnomaliesController < ApplicationController
   # DELETE /anomalies/1
   # DELETE /anomalies/1.json
   def destroy
-    @anomaly = Anomalie.find(params[:id])
+    @anomaly = Anomaly.find(params[:id])
     @anomaly.destroy
 
     respond_to do |format|
