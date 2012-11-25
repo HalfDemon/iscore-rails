@@ -87,6 +87,26 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Only one report per reporting period.
 
+### Schema
+####   Intrusion Reports
+  * named: The Name of the report, This should named Report for X AM / PM. Where x is the time due
+
+  * start_time  : The time that teams are submit the report
+
+  * due_time :  The time that must sumbit the report by
+
+  * Special Instructions : Anything special that this 
+####  Intrusion Report Submit (this is what teams submit)
+  * content : What the team said
+
+  * read : Has the team's report been ready yet
+
+  * points_earned : How many points did they earns
+
+  * site_id : What site made the report
+
+  * intrusion_report_id : What report / time period is the submission for
+
 ## Green Team Usability Reports
 * Started by Green Team Leader
 
@@ -237,3 +257,16 @@ After the CDC the permissions are the same expect for:
 
 ## Scoring
 * Scoring is the very heart of IScorE-rails
+
+### Schmea
+* site_id
+
+* earned_points
+
+* possible_points
+
+* published :  Can the blue teams see it : boolean
+
+* type
+
+* reason : What were point(s) awared: requred if penilty 
