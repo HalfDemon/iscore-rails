@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @anomaly.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @anomaly.description %>
+</p>
+
+<p>
+  <b>Due time:</b>
+  <%= @anomaly.due_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_anomaly_path(@anomaly) %> |
+<%= link_to 'Back', anomalies_path %>

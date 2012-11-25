@@ -1,0 +1,27 @@
+<h1>Listing anomalies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Due time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @anomalies.each do |anomaly| %>
+  <tr>
+    <td><%= anomaly.name %></td>
+    <td><%= anomaly.description %></td>
+    <td><%= anomaly.due_time %></td>
+    <td><%= link_to 'Show', anomaly %></td>
+    <td><%= link_to 'Edit', edit_anomaly_path(anomaly) %></td>
+    <td><%= link_to 'Destroy', anomaly, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Anomaly', new_anomaly_path %>
