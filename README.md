@@ -78,6 +78,27 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
   field, to able back points, up to half. These will be judged by the Red and White teams.
+#### Schema
+##### Flag (`flag`)
+* `name`
+	* required
+ 	* `string`
+  	* Name of Flag 
+   	* Examples
+		* SSH - Read
+  		* SSH - Write
+          	* WWW - Read
+                * WWW - Write
+* `path`
+	* required
+ 	* `string`
+  	* Where the flag is stored
+   	* Examples
+    		* /root
+      		* C:\Users\Admin
+#### Flag Capture (`flag_capture`)
+* flag_id
+
 
 ## Intrusion Reports
 * Intrusion reports are periodic reports that are submitted by the Blue Teams. 
