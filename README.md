@@ -97,8 +97,18 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
     		* /root
       		* C:\Users\Admin
 #### Flag Capture (`flag_capture`)
-* flag_id
-
+* `flag_id`
+	* required
+	* interger
+* `captured_flag`
+	* required
+	* `text`
+	* What was the content of flag captured
+* `site_id`
+	* required
+	* integer
+	* What site does the flag belong to
+		
 
 ## Intrusion Reports
 * Intrusion reports are periodic reports that are submitted by the Blue Teams. 
@@ -110,7 +120,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 * Only one report per reporting period.
 
 ### Schema
-####   Intrusion Reports
+####  Intrusion Reports (`intrusion_report`)
  * `name`
   * Required
   * `string`
@@ -128,7 +138,8 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   * `datetime`
   * The time that must sumbit the report by
 
- * Special Instructions : Anything special that this 
+ * `special_instructions`
+ 	* Anything special that this 
 ####  Intrusion Report Submissions (intrusion_report_submission)
 * `content`
 	* required
@@ -138,12 +149,18 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   * Has the team's report been ready yet by the white team
 
  * `points_earned`
+  * Must be blank on create
+  * `integer`
   * How many points did they earn
 
  * `site_id` 
+  * required
+  * `integer`
   * What site made the report
 
  * `intrusion_report_id` 
+  * required
+  * `integer`
   * What report / time period is the submission for
 
 ## Green Team Usability Reports
@@ -188,8 +205,9 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 * `site_id` 
 	* required
 	* `integer`
+	* What site submited the report
 
-* `comment`
+* `comments`
 	* not required
 	* `text`
 	* This field can used to desribe that wasn't working, etc.
@@ -240,6 +258,10 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 	* `service_id`
 		* required
 		* integer
+	* `usability_report_id`
+		* required
+		* integer 
+		
 
 
 ## Anomalies
@@ -397,3 +419,6 @@ After the CDC the permissions are the same expect for:
 	* `type` : What type points are these : string
 	
 	* `reason` : What were point(s) awared: requred if penilty (negtive earned_points value)
+## Can you draw me a picture?
+### Yes, Yes I can!
+![DB Schema Photo]()
