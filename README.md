@@ -34,7 +34,8 @@ Want to give back to IScorE-rails? Follow theses steps
 changes. If they do move to step 9 (nine). If not you're done
 9. If changes were requested please make the changes on the same topic branch and push them for your fork.
 10. Go back to Step 8, (repeat if needed)
-
+## NOTE:
+	[The Schmea is Here](http://mab879.github.com/iscore-rails/database_map.html Schema Page)
 ## Team Descriptons ([from the Offical Iowa State Documention](https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf))
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
 teams must identify and defend against various security threats via the Competition network.
@@ -419,6 +420,3 @@ After the CDC the permissions are the same expect for:
 	* `type` : What type points are these : string
 	
 	* `reason` : What were point(s) awared: requred if penilty (negtive earned_points value)
-## Can you draw me a picture?
-### Yes, Yes I can!
-![DB Schema Photo]()
