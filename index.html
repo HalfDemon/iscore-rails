@@ -33,7 +33,9 @@
 <p>IScorE-rails is a Cyber Denfense Competition scoring system.</p>
 
 <p><a href="http://travis-ci.org/Mab879/iscore-rails"><img src="https://secure.travis-ci.org/Mab879/iscore-rails.png?branch=master" alt="Build Status"></a>
-<a href="https://codeclimate.com/github/Mab879/iscore-rails/"><img src="https://codeclimate.com/badge.png" alt="Code Climate"></a></p>
+<a href="https://codeclimate.com/github/Mab879/iscore-rails/"><img src="https://codeclimate.com/badge.png" alt="Code Climate"></a>
+<a href="http://rails-brakeman.com/mab879/iscore-rails"><img src="http://rails-brakeman.com/mab879/iscore-rails.png" alt="Brakeman"></a>
+<a href="https://gemnasium.com/Mab879/iscore-rails"><img src="https://gemnasium.com/Mab879/iscore-rails.png" alt="Dependency Status"></a></p>
 
 <p>This applcation uses the Iowa State and IT-Adventures Cyber
 Defense Cyber Defense Competition structure and naming 
@@ -44,35 +46,39 @@ change the names for your type of Cyber Defense Competition.</p>
 competition. Please change this application for YOUR CDC.</p>
 
 <p><strong>ANOTHER NOTE:</strong> Please take note that most of have is descriped below isn't created yet. The point of this
-README is to tell you what ISorE-rails is and the the people who work on this project what the should 
-be doing and how.</p>
+README is to tell you what ISorE-rails is and the the people who work on this project what the should be doing and how.</p>
+
+<p><strong>ALSO</strong>
+<a href="http://mab879.github.com/iscore-rails/database_map.html">The Schmea is Here</a></p>
 
 <h2>Contributing</h2>
 
-<p>Want to give back to iscore-rails? Follow theses steps</p>
+<p>Want to give back to IScorE-rails? Follow theses steps</p>
 
 <ol>
 <li>Clone the Repo from the <a href="https://github/mab879/iscore-rails">main repo</a>
 </li>
-<li>Fork the repo</li>
-<li>Make a title branh for your changes</li>
+<li>Fork the repo on your account</li>
+<li>Make a title branch for your changes</li>
 <li>Make your changes</li>
 <li>Make serval commits for change (not required, but helpful)
 
 <ul>
-<li>Break down your change into logical steps </li>
+<li>Break down your change into logical steps.</li>
 </ul>
 </li>
 <li>Push the changes to your fork</li>
-<li>Submit a pull request</li>
+<li>Submit a pull request to the <a href="https://github.com/Mab879/iscore-rails">main repo</a>
+</li>
 <li>Wait. The core team will look the changes. They may ask you to make some 
-changes. If they do move to step 9 (nine). If not your done</li>
+changes. If they do move to step 9 (nine). If not you're done</li>
 <li>If changes were requested please make the changes on the same topic branch and push them for your fork.</li>
-<li>Go back to Step 8, (repeat if needed)
-## Team Descriptons (<a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">from the Offical Iowa State Documention</a>)</li>
-<li>Blue Teams - Competitors playing the role of the Information Assurance community.  These
-teams must identify and defend against various security threats via the Competition network.</li>
-</ol><ul>
+<li>Go back to Step 8, (repeat if needed)</li>
+</ol><h2>Team Descriptons (<a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">from the Offical Iowa State Documention</a>)</h2>
+
+<ul>
+<li><p>Blue Teams - Competitors playing the role of the Information Assurance community.  These
+teams must identify and defend against various security threats via the Competition network.</p></li>
 <li><p>Red Team - Comprised of professionals from the Information Assurance community playing the
 role of hackers.  This team must create and implement various attack strategies against the Blue
 Teams, and capture flags from the Blue Team servers.</p></li>
@@ -106,8 +112,79 @@ is also recommend to add a comment about each outage.</p></li>
 <ul>
 <li><p>Flags are made by Competion Director. The Read Team will marks theses flags as captured when the discover them.
 The will enter the flag into the text field on the flag page for later verifition. </p></li>
-<li><p>Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
-field, to able back points, up to half. These will be judged by the Red and White teams.</p></li>
+<li>
+<p>Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
+field, to able back points, up to half. These will be judged by the Red and White teams.</p>
+
+<h4>Schema</h4>
+
+<h5>Flag (<code>flag</code>)</h5>
+</li>
+<li>
+<p><code>name</code></p>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>Name of Flag </li>
+<li>Examples
+
+<ul>
+<li>SSH - Read</li>
+<li>SSH - Write
+
+<ul>
+<li>WWW - Read
+
+<ul>
+<li>WWW - Write</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>path</code></p>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>Where the flag is stored</li>
+<li>Examples
+    * /root
+    * C:\Users\Admin
+#### Flag Capture (<code>flag_capture</code>)</li>
+</ul>
+</li>
+<li>
+<p><code>flag_id</code></p>
+
+<ul>
+<li>required</li>
+<li>interger</li>
+</ul>
+</li>
+<li>
+<p><code>captured_flag</code></p>
+
+<ul>
+<li>required</li>
+<li><code>text</code></li>
+<li>What was the content of flag captured</li>
+</ul>
+</li>
+<li>
+<p><code>site_id</code></p>
+
+<ul>
+<li>required</li>
+<li>integer</li>
+<li>What site does the flag belong to</li>
+</ul>
+</li>
 </ul><h2>Intrusion Reports</h2>
 
 <ul>
@@ -115,6 +192,87 @@ field, to able back points, up to half. These will be judged by the Red and Whit
 <li><p>This report is where the teams will tell what isn't or is happening with there networks and services.</p></li>
 <li><p>These are juged by the White Team</p></li>
 <li><p>Only one report per reporting period.</p></li>
+</ul><h3>Schema</h3>
+
+<h4>Intrusion Reports (<code>intrusion_report</code>)</h4>
+
+<ul>
+<li>
+<p><code>name</code></p>
+
+<ul>
+<li>Required</li>
+<li><code>string</code></li>
+<li>The Name of the report </li>
+<li>This should named Report for X AM / PM. 
+
+<ul>
+<li>Where x is the time due</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>start_time</code></p>
+
+<ul>
+<li>required</li>
+<li><code>datetime</code></li>
+<li>The time that teams are submit the report</li>
+</ul>
+</li>
+<li>
+<p><code>due_time</code></p>
+
+<ul>
+<li>requried</li>
+<li><code>datetime</code></li>
+<li>The time that must sumbit the report by</li>
+</ul>
+</li>
+<li>
+<p><code>special_instructions</code></p>
+
+<ul>
+<li>Anything special that this 
+####  Intrusion Report Submissions (intrusion_report_submission)</li>
+<li><code>content</code></li>
+<li>required</li>
+<li>What the team said</li>
+<li>
+<code>read</code><br>
+</li>
+<li>can't be true on create</li>
+<li>Has the team's report been ready yet by the white team</li>
+</ul>
+</li>
+<li>
+<p><code>points_earned</code></p>
+
+<ul>
+<li>Must be blank on create</li>
+<li><code>integer</code></li>
+<li>How many points did they earn</li>
+</ul>
+</li>
+<li>
+<p><code>site_id</code> </p>
+
+<ul>
+<li>required</li>
+<li><code>integer</code></li>
+<li>What site made the report</li>
+</ul>
+</li>
+<li>
+<p><code>intrusion_report_id</code> </p>
+
+<ul>
+<li>required</li>
+<li><code>integer</code></li>
+<li>What report / time period is the submission for</li>
+</ul>
+</li>
 </ul><h2>Green Team Usability Reports</h2>
 
 <ul>
@@ -122,12 +280,184 @@ field, to able back points, up to half. These will be judged by the Red and Whit
 <li><p>Then Started only Green Team Memebers can see theses scores and edit theme</p></li>
 <li><p>The score will be released to Blue Teams after all reports are done and 
 the scores are released by Green Team Leader</p></li>
+</ul><h3>Schema</h3>
+
+<h4>Usability Reports (<code>usability_report</code>)</h4>
+
+<ul>
+<li>
+<p><code>name</code></p>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>Can be anything that descibes that report
+
+<ul>
+<li>Examples
+
+<ul>
+<li>Morning Check</li>
+<li>Check 1</li>
+<li>Monday Morning Check</li>
+<li>3:00 PM Check</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>It's really up leaders to the compeition</li>
+</ul>
+</li>
+<li>
+<p><code>start_time</code></p>
+
+<ul>
+<li>required</li>
+<li><code>datetime</code></li>
+<li>When Green Team Members can start submiting reports</li>
+</ul>
+</li>
+<li>
+<p><code>due_date</code></p>
+
+<ul>
+<li>not required on create, needed to publish</li>
+<li><code>datetime</code></li>
+<li> It is recommend <strong>NOT</strong> to set this until time to publish</li>
+</ul>
+</li>
+<li>
+<p><code>published</code></p>
+
+<ul>
+<li>required to be false on create</li>
+<li>boolean</li>
+<li>It it added to blue teams scores</li>
+</ul>
+</li>
+</ul><h4>Usability Reports Submission (<code>usability_reports_submission</code>)</h4>
+
+<ul>
+<li>
+<p><code>site_id</code> </p>
+
+<ul>
+<li>required</li>
+<li><code>integer</code></li>
+<li>What site submited the report</li>
+</ul>
+</li>
+<li>
+<p><code>comments</code></p>
+
+<ul>
+<li>not required</li>
+<li><code>text</code></li>
+<li>This field can used to desribe that wasn't working, etc.</li>
+</ul>
+</li>
+<li>
+<p><code>done_by</code></p>
+
+<ul>
+<li>required</li>
+<li><code>integer</code></li>
+<li>What user (id) sumbited this check</li>
+</ul>
+</li>
+<li><p>The checks that are need are a separate model</p></li>
+</ul><h4>Service (<code>service</code>)</h4>
+
+<ul>
+<li>A tooltip will show these details on the Usability Reports</li>
+<li>This is shared wit the the service scanner</li>
+<li>
+<code>name</code>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>Name of Service</li>
+<li>Examples
+
+<ul>
+<li>Web Server - WWW</li>
+<li>Web Server - FTP</li>
+<li>Remote Desktop - RDP</li>
+<li>Wiki Server - WWW</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code>port</code>
+
+<ul>
+<li>required </li>
+<li><code>integer</code></li>
+<li>What port is this service on</li>
+<li>Examples:
+
+<ul>
+<li>80</li>
+<li>21</li>
+<li>3389</li>
+<li>22</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code>subdomain</code>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>What subdomain is it on</li>
+<li>Example
+
+<ul>
+<li>www 
+<a href="http://www.site1.cdc.com">www.site1.cdc.com</a>
+#### Usability Reports Check (usability_reports_check)<br><code>works</code>
+</li>
+<li>requred</li>
+<li><code>boolean</code></li>
+<li>Does the service work as expected</li>
+</ul>
+</li>
+<li>
+<code>site_id</code>
+
+<ul>
+<li>required</li>
+<li>integer </li>
+</ul>
+</li>
+<li>
+<code>service_id</code>
+
+<ul>
+<li>required</li>
+<li>integer</li>
+</ul>
+</li>
+<li>
+<code>usability_report_id</code>
+
+<ul>
+<li>required</li>
+<li>integer </li>
+</ul>
+</li>
+</ul>
+</li>
 </ul><h2>Anomalies</h2>
 
 <ul>
 <li><p>Created by the Green Team Leader</p></li>
 <li><p>Done by the Blue Team </p></li>
-<li><p>Juged by the Green Team Leaders and/ or members</p></li>
+<li><p>Judged by the Green Team Leaders and/ or members</p></li>
 </ul><h2>Documentaion</h2>
 
 <ul>
@@ -312,7 +642,25 @@ the ids are listed in the admin sectiaon.</li>
 </ul><h2>Scoring</h2>
 
 <ul>
-<li>Scoring is the very heart of IScorE-rails</li>
+<li>
+<p>Scoring is the very heart of IScorE-rails</p>
+
+<h3>Schmea</h3>
+
+<ul>
+<li><code>site_id</code></li>
+<li>
+<code>earned_point</code> : interger</li>
+<li>
+<code>possible_points</code> : interger</li>
+<li>
+<code>published</code> : Can the blue teams see it : boolean</li>
+<li>
+<code>type</code> : What type points are these : string</li>
+<li>
+<code>reason</code> : What were point(s) awared: requred if penilty (negtive earned_points value)</li>
+</ul>
+</li>
 </ul>
         </section>
 
