@@ -12,8 +12,9 @@ class Site < ActiveRecord::Base
 
 
   validates_uniqueness_of :number
-
   
+  validates_numericality_of :number
+
   before_create :set_default_values
 
   has_many :flags

@@ -17,6 +17,7 @@ class ApplicationController < ActionController::Base
 $cdc_name = "Sample CDC"
 #
 # CDC Start Time
+#
 # Start Time of CDC
 # This when the cdc starts
 # this will unlock all
@@ -28,6 +29,7 @@ $cdc_name = "Sample CDC"
 $cdc_start_name = Chronic.parse("8 hours ago")
 # 
 # CDC End Time
+#
 # This is when the compition closes
 # You will want to hard
 # code these since using the
