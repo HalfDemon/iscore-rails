@@ -63,6 +63,7 @@ duties during the competition.
 * CDC Director - Oversees the operation of the CDC, leads the White
 Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams.
 
+
 ## IScorE-rails Terms
 * Document - A documention for the White and Green Teams or other purposes.
 
@@ -80,8 +81,9 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
   field, to able back points, up to half. These will be judged by the Red and White teams.
-#### Schema
-##### Flag (`flag`)
+### Schema
+
+#### Flag (`flag`)
 * `name`
 	* required
  	* `string`
