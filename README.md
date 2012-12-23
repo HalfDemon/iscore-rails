@@ -98,6 +98,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
    	* Examples
     		* /root
       		* C:\Users\Admin
+   
 #### Flag Capture (`flag_capture`)
 * `flag_id`
 	* required
