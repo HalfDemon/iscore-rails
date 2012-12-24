@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @usability_report.name %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @usability_report.start_time %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%= @usability_report.end_time %>
+</p>
+
+<p>
+  <b>Speical instructions:</b>
+  <%= @usability_report.speical_instructions %>
+</p>
+
+
+<%= link_to 'Edit', edit_usability_report_path(@usability_report) %> |
+<%= link_to 'Back', usability_reports_path %>
