@@ -36,6 +36,7 @@ changes. If they do move to step 9 (nine). If not you're done
 10. Go back to Step 8, (repeat if needed)
 ## NOTE:
 	[The Schmea is Here](http://mab879.github.com/iscore-rails/database_map.html Schema Page)
+
 ## Team Descriptons ([from the Offical Iowa State Documention](https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf))
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
 teams must identify and defend against various security threats via the Competition network.
@@ -79,6 +80,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 
 * Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
   field, to able back points, up to half. These will be judged by the Red and White teams.
+  
 #### Schema
 ##### Flag (`flag`)
 * `name`
@@ -97,6 +99,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
    	* Examples
     		* /root
       		* C:\Users\Admin
+      		
 #### Flag Capture (`flag_capture`)
 * `flag_id`
 	* required
@@ -140,7 +143,9 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
   * The time that must sumbit the report by
 
  * `special_instructions`
+ 	* `text`
  	* Anything special that this 
+ 
 ####  Intrusion Report Submissions (intrusion_report_submission)
 * `content`
 	* required
@@ -248,6 +253,7 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 	* Example
 		* www 
 			www.site1.cdc.com
+
 #### Usability Reports Check (usability_reports_check)		
 	`works`
 		* requred
@@ -406,17 +412,39 @@ After the CDC the permissions are the same expect for:
 * The API can be found at `(IScorE_host)/api/v1/`
 
 ## Scoring
-* Scoring is the very heart of IScorE-rails
 
+	
 	### Schmea
-	* `site_id`
-	
-	* `earned_point` : interger
-	
-	* `possible_points` : interger
-	
-	* `published` : Can the blue teams see it : boolean
-	
-	* `type` : What type points are these : string
-	
-	* `reason` : What were point(s) awared: requred if penilty (negtive earned_points value)
+	#### Point Award (`point_award`)
+		* `site_id`
+			* required
+			* `interger`
+		
+		* `earned_point` 
+			* required
+			* `integer`
+			* How Many Points Earned
+				* Can be any interger (postive and negtive)
+			
+		
+		* `possible_points`
+			* required
+			* `interger`
+			* How many points could be earned
+				* Needs to be `0` if the point is a 
+					* Pentaly
+					* Adjustment
+			
+		* `published` 
+			* required
+			* `boolean` 
+			* Can the blue teams see it
+		
+		* `type` 
+			* required 
+			* `string` 
+			* What type points are these
+		
+		* `reason` 
+		 * `text`
+		 * What were point(s) awared: requred if penilty (negtive earned_points value)
