@@ -1,0 +1,29 @@
+<h1>Listing usability_reports</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Speical instructions</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @usability_reports.each do |usability_report| %>
+  <tr>
+    <td><%= usability_report.name %></td>
+    <td><%= usability_report.start_time %></td>
+    <td><%= usability_report.end_time %></td>
+    <td><%= usability_report.speical_instructions %></td>
+    <td><%= link_to 'Show', usability_report %></td>
+    <td><%= link_to 'Edit', edit_usability_report_path(usability_report) %></td>
+    <td><%= link_to 'Destroy', usability_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Usability report', new_usability_report_path %>
