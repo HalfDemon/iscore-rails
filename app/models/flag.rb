@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: flags
+#
+#  id                 :integer          not null, primary key
+#  content            :text
+#  site_id            :integer
+#  captured           :boolean
+#  captured_flag      :text
+#  earned_back_points :integer
+#  earned_back        :boolean
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#
+
 ##
 # Captured: Has the Red Team owned it : boolean : default: false
 # Captured Flag: What the red team own : text

@@ -37,8 +37,9 @@ group :development, :test do
 	gem 'factory_girl_rails', '3.5.0'
 	gem 'guard-rails_best_practices'
 	gem 'capybara'
-  	gem 'sqlite3'
+  gem 'sqlite3'
 	gem 'rack-mini-profiler'
+  gem 'annotate', '2.5.0'
 end
 
 gem 'simple_form'

@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  username        :string(255)      not null
+#  name            :string(255)      not null
+#  site_id         :integer
+#  password_digest :string(255)      not null
+#  admin           :boolean          default(FALSE)
+#  team            :string(255)      not null
+#  email           :string(255)      not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 ##
 # == User 
 # A user is a any user usign the system.
