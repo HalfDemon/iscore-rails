@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3a95c42-7eb6-4328-b315-6f526fdf7683" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/service.rb" afterPath="$PROJECT_DIR$/app/models/service.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/usability_report.rb" afterPath="$PROJECT_DIR$/app/models/usability_report.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/usability_reports_check.rb" afterPath="$PROJECT_DIR$/app/models/usability_reports_check.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/usability_reports_submission.rb" afterPath="$PROJECT_DIR$/app/models/usability_reports_submission.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-    </list>
+    <list default="true" id="f3a95c42-7eb6-4328-b315-6f526fdf7683" name="Default" comment="" />
     <ignored path="iscore-rails.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
