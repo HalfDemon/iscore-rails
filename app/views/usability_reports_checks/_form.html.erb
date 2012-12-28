@@ -1,0 +1,21 @@
+<%= simple_form_for(@usability_reports_check) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.input :work %>
+
+    <%= f.association :site %>
+
+    <%= f.association :service %>
+
+    <%= f.input :use %>
+
+    <%= f.association :usability_reports_submission %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
