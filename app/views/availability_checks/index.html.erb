@@ -1,0 +1,31 @@
+<h1>Listing availability_checks</h1>
+
+<table>
+  <tr>
+    <th>Pubic run time</th>
+    <th>Actual start time</th>
+    <th>Actual end time</th>
+    <th>Number of services up</th>
+    <th>Number of services down</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @availability_checks.each do |availability_check| %>
+  <tr>
+    <td><%= availability_check.pubic_run_time %></td>
+    <td><%= availability_check.actual_start_time %></td>
+    <td><%= availability_check.actual_end_time %></td>
+    <td><%= availability_check.number_of_services_up %></td>
+    <td><%= availability_check.number_of_services_down %></td>
+    <td><%= link_to 'Show', availability_check %></td>
+    <td><%= link_to 'Edit', edit_availability_check_path(availability_check) %></td>
+    <td><%= link_to 'Destroy', availability_check, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Availability check', new_availability_check_path %>

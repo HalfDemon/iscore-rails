@@ -1,0 +1,21 @@
+<%= simple_form_for(@availability_check) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.input :pubic_run_time %>
+
+    <%= f.input :actual_start_time %>
+
+    <%= f.input :actual_end_time %>
+
+    <%= f.input :number_of_services_up %>
+
+    <%= f.input :number_of_services_down %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
