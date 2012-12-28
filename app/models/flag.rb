@@ -1,5 +1,5 @@
 ##
-# Captured: Has the Red Team woned it : boolean : default: false
+# Captured: Has the Red Team owned it : boolean : default: false
 # Captured Flag: What the red team own : text
 # Content: What the flag is : text
 # Earned Back: Has flag earned points : boolean : default: false 

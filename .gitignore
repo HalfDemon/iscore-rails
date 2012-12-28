@@ -16,3 +16,4 @@
 
 # Ignore Aptana
 .project
+.idea

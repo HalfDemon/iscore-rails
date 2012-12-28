@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Work:</b>
+  <%= @usability_reports_check.work %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @usability_reports_check.site %>
+</p>
+
+<p>
+  <b>Service:</b>
+  <%= @usability_reports_check.service %>
+</p>
+
+<p>
+  <b>Use:</b>
+  <%= @usability_reports_check.use %>
+</p>
+
+<p>
+  <b>Usability reports submission:</b>
+  <%= @usability_reports_check.usability_reports_submission %>
+</p>
+
+
+<%= link_to 'Edit', edit_usability_reports_check_path(@usability_reports_check) %> |
+<%= link_to 'Back', usability_reports_checks_path %>

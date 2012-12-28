@@ -1,6 +1,12 @@
 require 'api_constraints'
 
 Iscore::Application.routes.draw do
+  resources :usability_reports_checks
+
+
+  resources :usability_reports_submissions
+
+
   resources :usability_reports
 
 

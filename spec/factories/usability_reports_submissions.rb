@@ -1,10 +1,9 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :service do
-    name "Web Server"
-    port 80
-    subdomain "www"
-    site_id site
+  factory :usability_reports_submission do
+    site_id 1
+    comments "MyString"
+    done_by 1
   end
 end
