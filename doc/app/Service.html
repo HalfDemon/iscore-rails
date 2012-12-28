@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-<title>module UsersHelper - Rails Application Documentation</title>
+<title>class Service - Rails Application Documentation</title>
 
 <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
@@ -20,7 +20,7 @@
 <script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
 
 
-<body id="top" class="module">
+<body id="top" class="class">
 <nav id="metadata">
   <nav id="home-section" class="section">
   <h3 class="section-header">
@@ -47,7 +47,7 @@
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
-    <li>app/helpers/users_helper.rb
+    <li>app/models/service.rb
   </ul>
 </nav>
 
@@ -56,7 +56,13 @@
 
   <div id="class-metadata">
     
-    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
     
     
   </div>
@@ -178,10 +184,54 @@
 </nav>
 
 <div id="documentation">
-  <h1 class="module">module UsersHelper</h1>
+  <h1 class="class">class Service</h1>
 
   <div id="description" class="description">
     
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: services</p>
+
+<pre>id         :integer          not null, primary key
+name       :string(255)
+port       :integer
+subdomain  :string(255)
+site_id    :integer
+created_at :datetime         not null
+updated_at :datetime         not null</pre>
+
+<h2 id="label-Purpose">Purpose</h2>
+
+<p>Track every teams service</p>
+
+<h2 id="label-Usage">Usage</h2>
+
+<p>These need to be created before the competition starts</p>
+
+<h2 id="label-Examples">Examples</h2>
+
+<p>Team 22 Web Server</p>
+<ul><li>
+<p><code>Name</code> Team 22 Web Server</p>
+</li><li>
+<p><code>Port</code> 80</p>
+</li><li>
+<p><code>site_id</code> 22</p>
+</li></ul>
+
+<p><code>subdomain</code> www</p>
+
+<p>Team 22 Remote Desktop Server</p>
+<ul><li>
+<p><code>Name</code> Team 22 RDP Server</p>
+</li><li>
+<p><code>Port</code> 3389</p>
+</li><li>
+<p><code>site_id</code> 22</p>
+</li></ul>
+
+<p><code>subdomain</code> rdp</p>
+
   </div><!-- description -->
 
   

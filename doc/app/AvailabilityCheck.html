@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-<title>module UsersHelper - Rails Application Documentation</title>
+<title>class AvailabilityCheck - Rails Application Documentation</title>
 
 <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
@@ -20,7 +20,7 @@
 <script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
 
 
-<body id="top" class="module">
+<body id="top" class="class">
 <nav id="metadata">
   <nav id="home-section" class="section">
   <h3 class="section-header">
@@ -47,7 +47,7 @@
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
-    <li>app/helpers/users_helper.rb
+    <li>app/models/availability_check.rb
   </ul>
 </nav>
 
@@ -56,7 +56,13 @@
 
   <div id="class-metadata">
     
-    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
     
     
   </div>
@@ -178,10 +184,44 @@
 </nav>
 
 <div id="documentation">
-  <h1 class="module">module UsersHelper</h1>
+  <h1 class="class">class AvailabilityCheck</h1>
 
   <div id="description" class="description">
     
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: availability_checks</p>
+
+<pre>id                      :integer          not null, primary key
+pubic_run_time          :datetime
+actual_start_time       :datetime
+actual_end_time         :datetime
+number_of_services_up   :integer
+number_of_services_down :integer
+created_at              :datetime         not null
+updated_at              :datetime         not null</pre>
+
+<h2 id="label-Purpose">Purpose</h2>
+
+<p>The purpose of this model is to own each availability check. Example 10:10
+AM</p>
+
+<h2 id="label-Usage">Usage</h2>
+
+<p>Create these before the CDC starts with the following attributes:</p>
+<ul><li>
+<p><code>public_run_time</code>Set to Public Run Time</p>
+</li></ul>
+
+<h3 id="label-Examples">Examples</h3>
+<ul><li>
+<p>10:10 AM</p>
+</li><li>
+<p>12:20 PM</p>
+</li><li>
+<p>All of the other attributes should be left blank</p>
+</li></ul>
+
   </div><!-- description -->
 
   

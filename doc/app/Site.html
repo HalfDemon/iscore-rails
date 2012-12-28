@@ -64,7 +64,17 @@
 </nav>
 
     
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
     
+    <li><a href="#method-i-set_default_values">#set_default_values</a>
+    
+  </ul>
+</nav>
+
   </div>
 
   <div id="project-metadata">
@@ -83,19 +93,93 @@
 
   <ul class="link-list">
   
+    <li><a href="./Api.html">Api</a>
+  
+    <li><a href="./Api/V1.html">Api::V1</a>
+  
+    <li><a href="./Api/V1/SitesController.html">Api::V1::SitesController</a>
+  
+    <li><a href="./Api/V1/UserController.html">Api::V1::UserController</a>
+  
+    <li><a href="./Ability.html">Ability</a>
+  
+    <li><a href="./AnomaliesController.html">AnomaliesController</a>
+  
+    <li><a href="./AnomaliesHelper.html">AnomaliesHelper</a>
+  
+    <li><a href="./Anomaly.html">Anomaly</a>
+  
+    <li><a href="./ApiConstraints.html">ApiConstraints</a>
+  
     <li><a href="./ApplicationController.html">ApplicationController</a>
   
     <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
   
-    <li><a href="./IntrusionReportCommentHelper.html">IntrusionReportCommentHelper</a>
+    <li><a href="./AvailabilityCheck.html">AvailabilityCheck</a>
   
-    <li><a href="./IntrusionReportsHelper.html">IntrusionReportsHelper</a>
+    <li><a href="./AvailabilityChecksController.html">AvailabilityChecksController</a>
+  
+    <li><a href="./AvailabilityChecksHelper.html">AvailabilityChecksHelper</a>
+  
+    <li><a href="./AvailabilityServiceCheck.html">AvailabilityServiceCheck</a>
+  
+    <li><a href="./AvailabilityServiceChecksController.html">AvailabilityServiceChecksController</a>
+  
+    <li><a href="./AvailabilityServiceChecksHelper.html">AvailabilityServiceChecksHelper</a>
+  
+    <li><a href="./DashboardController.html">DashboardController</a>
+  
+    <li><a href="./DashboardHelper.html">DashboardHelper</a>
+  
+    <li><a href="./Flag.html">Flag</a>
+  
+    <li><a href="./FlagsController.html">FlagsController</a>
+  
+    <li><a href="./FlagsHelper.html">FlagsHelper</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Service.html">Service</a>
+  
+    <li><a href="./ServiceType.html">ServiceType</a>
+  
+    <li><a href="./ServiceTypesController.html">ServiceTypesController</a>
+  
+    <li><a href="./ServiceTypesHelper.html">ServiceTypesHelper</a>
+  
+    <li><a href="./ServicesController.html">ServicesController</a>
+  
+    <li><a href="./ServicesHelper.html">ServicesHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
   
     <li><a href="./Site.html">Site</a>
   
     <li><a href="./SitesController.html">SitesController</a>
   
     <li><a href="./SitesHelper.html">SitesHelper</a>
+  
+    <li><a href="./UsabilityReport.html">UsabilityReport</a>
+  
+    <li><a href="./UsabilityReportsCheck.html">UsabilityReportsCheck</a>
+  
+    <li><a href="./UsabilityReportsChecksController.html">UsabilityReportsChecksController</a>
+  
+    <li><a href="./UsabilityReportsChecksHelper.html">UsabilityReportsChecksHelper</a>
+  
+    <li><a href="./UsabilityReportsController.html">UsabilityReportsController</a>
+  
+    <li><a href="./UsabilityReportsHelper.html">UsabilityReportsHelper</a>
+  
+    <li><a href="./UsabilityReportsSubmission.html">UsabilityReportsSubmission</a>
+  
+    <li><a href="./UsabilityReportsSubmissionsController.html">UsabilityReportsSubmissionsController</a>
+  
+    <li><a href="./UsabilityReportsSubmissionsHelper.html">UsabilityReportsSubmissionsHelper</a>
   
     <li><a href="./User.html">User</a>
   
@@ -116,8 +200,8 @@
     
 <h2 id="label-Blue+Teams">Blue Teams</h2>
 
-<p>Sites or Blue Teams are the groups of people in the CDC a user belongs to a
-site</p>
+<p>Sites or Blue Teams are the groups of people in the CDCs a user belongs to
+a site. a site owns all of the objects</p>
 
   </div><!-- description -->
 
@@ -135,6 +219,42 @@ site</p>
 
     <!-- Methods -->
     
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-set_default_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_default_values</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_default_values-source">
+            <pre><span class="ruby-comment"># File app/models/site.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_default_values</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">points</span> = <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_default_values-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_default_values-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
   </section><!-- 5Buntitled-5D -->
 
 </div><!-- documentation -->

@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-<title>module UsersHelper - Rails Application Documentation</title>
+<title>class AvailabilityServiceCheck - Rails Application Documentation</title>
 
 <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
@@ -20,7 +20,7 @@
 <script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
 
 
-<body id="top" class="module">
+<body id="top" class="class">
 <nav id="metadata">
   <nav id="home-section" class="section">
   <h3 class="section-header">
@@ -47,7 +47,7 @@
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
-    <li>app/helpers/users_helper.rb
+    <li>app/models/availability_service_check.rb
   </ul>
 </nav>
 
@@ -56,7 +56,13 @@
 
   <div id="class-metadata">
     
-    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
     
     
   </div>
@@ -178,10 +184,35 @@
 </nav>
 
 <div id="documentation">
-  <h1 class="module">module UsersHelper</h1>
+  <h1 class="class">class AvailabilityServiceCheck</h1>
 
   <div id="description" class="description">
     
+<h2 id="label-Schema+Information">Schema Information</h2>
+
+<p>Table name: availability_service_checks</p>
+
+<pre>id                    :integer          not null, primary key
+service_id            :integer
+availability_check_id :integer
+site_id               :integer
+available             :boolean
+created_at            :datetime         not null
+updated_at            :datetime         not null</pre>
+
+<h2 id="label-Purpose">Purpose</h2>
+
+<p>The purpose of the Availability <a href="Service.html">Service</a> Check is
+to document the state of a service at a given time</p>
+
+<h2 id="label-Usage">Usage</h2>
+
+<p>An internal tracking model.</p>
+
+<pre>Do not create any  Availability Service Checks</pre>
+
+<p>unless you really, really know what your doing This will effect scores</p>
+
   </div><!-- description -->
 
   
