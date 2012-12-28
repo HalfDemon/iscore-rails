@@ -24,7 +24,13 @@ describe FlagsController do
   # Flag. As you add validations to Flag, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {        
+        captured: false,
+        captured_flag: "",
+        content: "asdakldwlkjjekjleqkwjleqkwjekjleqw",
+        earned_back: false,
+        earned_back_points: "0"
+      }
   end
   
   # This should return the minimal set of values that should be in the session
@@ -32,11 +38,6 @@ describe FlagsController do
   # FlagsController. Be sure to keep this updated too.
   def valid_session
     {
-        captured: false,
-        captured_flag: "",
-        content: "asdakldwlkjjekjleqkwjleqkwjekjleqw",
-        earned_back: false,
-        earned_back_points: "0"
     }
   end
 
