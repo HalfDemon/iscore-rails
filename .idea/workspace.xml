@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3a95c42-7eb6-4328-b315-6f526fdf7683" name="Default" comment="" />
+    <list default="true" id="f3a95c42-7eb6-4328-b315-6f526fdf7683" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/iscore-rails.iml" afterPath="$PROJECT_DIR$/.idea/iscore-rails.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="iscore-rails.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,19 +40,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usability_report.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/usability_report.rb">
+      <file leaf-file-name="flag.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/flag.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="10" selection-start="314" selection-end="314" vertical-scroll-proportion="0.40823328">
+            <state line="13" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flag.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/flag.rb">
+      <file leaf-file-name="usability_report.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/usability_report.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+            <state line="14" column="10" selection-start="314" selection-end="314" vertical-scroll-proportion="0.40270728">
               <folding />
             </state>
           </provider>
@@ -91,10 +94,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1362" />
+    <option name="x" value="-4" />
     <option name="y" value="-4" />
-    <option name="width" value="1288" />
-    <option name="height" value="1032" />
+    <option name="width" value="1374" />
+    <option name="height" value="746" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -141,7 +144,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,20 +181,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iscore-rails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iscore-rails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Rake.doc:app">
     <configuration default="false" name="doc:app" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -389,11 +410,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: iscore-rails" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: iscore-rails" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.doc:app" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.doc:app" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: iscore-rails" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: iscore-rails" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -438,18 +459,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1362" y="-4" width="1288" height="1032" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="746" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29092383" sideWeight="0.40354767" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29092383" sideWeight="0.26274943" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27954546" sideWeight="0.34253246" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27954546" sideWeight="0.6461039" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32594234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8121547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -539,44 +560,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="100" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="50" column="100" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20121228031101_create_availability_checks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20121228025301_create_usability_reports_checks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="41" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/anomaly.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="70" selection-start="847" selection-end="847" vertical-scroll-proportion="0.6792453">
-          <folding />
-        </state>
+        <state line="32" column="70" selection-start="847" selection-end="847" vertical-scroll-proportion="0.6792453" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/availability_check.rb">
@@ -588,16 +597,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/availability_service_check.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="74" selection-start="977" selection-end="977" vertical-scroll-proportion="0.93310463">
-          <folding />
-        </state>
+        <state line="32" column="74" selection-start="977" selection-end="977" vertical-scroll-proportion="0.93310463" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/service_type.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="343" selection-end="343" vertical-scroll-proportion="0.37907377">
-          <folding />
-        </state>
+        <state line="13" column="29" selection-start="343" selection-end="343" vertical-scroll-proportion="0.37907377" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/flag.rb">
@@ -616,7 +621,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/usability_report.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="314" selection-end="314" vertical-scroll-proportion="0.40823328">
+        <state line="14" column="10" selection-start="314" selection-end="314" vertical-scroll-proportion="0.40270728">
           <folding />
         </state>
       </provider>
