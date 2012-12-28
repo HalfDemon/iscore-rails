@@ -12,13 +12,11 @@
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #
-
-##
 # Captured: Has the Red Team owned it : boolean : default: false
 # Captured Flag: What the red team own : text
 # Content: What the flag is : text
 # Earned Back: Has flag earned points : boolean : default: false 
-# Eanred Back Points: How Many points were gained back : default: 0
+# Earned Back Points: How Many points were gained back : default: 0
 #
 class Flag < ActiveRecord::Base
   belongs_to :site

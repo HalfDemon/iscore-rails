@@ -13,13 +13,18 @@
 #  captured_flags   :integer
 #  uncaptured_flags :integer
 #
-
-## 
-# == Blue Teams
+# == Purpose
+# To track the blue teams
+#
+# === Blue Teams
 # Sites or Blue Teams are the groups of people in the CDCs
 # a user belongs to a site.
 # a site owns all of the objects
 #
+#  == Usage
+# Create your Sites first!
+# It will make your life easy
+
 
 class Site < ActiveRecord::Base
   attr_accessible :name, :number, :organization, :points

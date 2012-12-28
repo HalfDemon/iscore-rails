@@ -9,6 +9,11 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
+# == Purpose
+# Tells the type of service
+# This model helps with stats
+# == Usage
+# This model needs to be created before the Service data is entered.
 
 class ServiceType < ActiveRecord::Base
   attr_accessible :description, :name, :port

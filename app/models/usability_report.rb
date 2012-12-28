@@ -9,6 +9,10 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+#
+# == Purpose
+# Usability Report Period
+
 
 class UsabilityReport < ActiveRecord::Base
   attr_accessible :end_time, :name, :start_time
