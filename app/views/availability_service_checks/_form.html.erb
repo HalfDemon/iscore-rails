@@ -1,0 +1,19 @@
+<%= simple_form_for(@availability_service_check) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.association :service %>
+
+    <%= f.association :availability_check %>
+
+    <%= f.association :site %>
+
+    <%= f.input :available %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

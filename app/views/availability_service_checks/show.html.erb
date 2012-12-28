@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Service:</b>
+  <%= @availability_service_check.service %>
+</p>
+
+<p>
+  <b>Availability check:</b>
+  <%= @availability_service_check.availability_check %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @availability_service_check.site %>
+</p>
+
+<p>
+  <b>Available:</b>
+  <%= @availability_service_check.available %>
+</p>
+
+
+<%= link_to 'Edit', edit_availability_service_check_path(@availability_service_check) %> |
+<%= link_to 'Back', availability_service_checks_path %>
