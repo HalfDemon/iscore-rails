@@ -1,0 +1,27 @@
+<h1>Listing usability_reports_submissions</h1>
+
+<table>
+  <tr>
+    <th>Site</th>
+    <th>Comments</th>
+    <th>Done by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @usability_reports_submissions.each do |usability_reports_submission| %>
+  <tr>
+    <td><%= usability_reports_submission.site_id %></td>
+    <td><%= usability_reports_submission.comments %></td>
+    <td><%= usability_reports_submission.done_by %></td>
+    <td><%= link_to 'Show', usability_reports_submission %></td>
+    <td><%= link_to 'Edit', edit_usability_reports_submission_path(usability_reports_submission) %></td>
+    <td><%= link_to 'Destroy', usability_reports_submission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Usability reports submission', new_usability_reports_submission_path %>

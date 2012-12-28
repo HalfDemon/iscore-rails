@@ -11,21 +11,61 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120623205547) do
+ActiveRecord::Schema.define(:version => 20121224192258) do
+
+  create_table "anomalies", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "due_time"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "flags", :force => true do |t|
+    t.text     "content"
+    t.integer  "site_id"
+    t.boolean  "captured"
+    t.text     "captured_flag"
+    t.integer  "earned_back_points"
+    t.boolean  "earned_back"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  add_index "flags", ["site_id"], :name => "index_flags_on_site_id"
+
+  create_table "services", :force => true do |t|
+    t.string   "name"
+    t.integer  "port"
+    t.string   "subdomain"
+    t.integer  "site_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "sites", :force => true do |t|
-    t.string   "name",                        :null => false
-    t.string   "organization",                :null => false
-    t.integer  "points",       :default => 0
-    t.string   "number",                      :null => false
+    t.string   "name",                            :null => false
+    t.string   "organization",                    :null => false
+    t.integer  "points",           :default => 0
+    t.string   "number",                          :null => false
     t.datetime "last_sign_in"
-    t.datetime "created_at",                  :null => false
-    t.datetime "updated_at",                  :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.integer  "captured_flags"
+    t.integer  "uncaptured_flags"
   end
 
   add_index "sites", ["name"], :name => "index_sites_on_name"
   add_index "sites", ["number"], :name => "index_sites_on_number"
   add_index "sites", ["organization"], :name => "index_sites_on_organization"
+
+  create_table "usability_reports", :force => true do |t|
+    t.string   "name"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username",                           :null => false

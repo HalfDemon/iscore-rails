@@ -24,7 +24,11 @@ describe AnomaliesController do
   # Anomaly. As you add validations to Anomaly, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {
+        name: "Test Test",
+        description: "Lololz LOolz Loolz Loldz",
+        due_time: Chronic.parse("3 hours from now")
+    }
   end
   
   # This should return the minimal set of values that should be in the session

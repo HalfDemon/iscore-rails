@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Site:</b>
+  <%= @usability_reports_submission.site_id %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @usability_reports_submission.comments %>
+</p>
+
+<p>
+  <b>Done by:</b>
+  <%= @usability_reports_submission.done_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_usability_reports_submission_path(@usability_reports_submission) %> |
+<%= link_to 'Back', usability_reports_submissions_path %>

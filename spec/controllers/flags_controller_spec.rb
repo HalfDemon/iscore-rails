@@ -31,7 +31,13 @@ describe FlagsController do
   # in order to pass any filters (e.g. authentication) defined in
   # FlagsController. Be sure to keep this updated too.
   def valid_session
-    {}
+    {
+        captured: false,
+        captured_flag: "",
+        content: "asdakldwlkjjekjleqkwjleqkwjekjleqw",
+        earned_back: false,
+        earned_back_points: "0"
+    }
   end
 
   describe "GET index" do

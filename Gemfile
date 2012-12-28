@@ -23,7 +23,7 @@ end
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'haml'
-
+gem 'chronic'
 group :development, :test do
 	gem 'rspec-rails', '~> 2.10.1'
 	gem 'spork', '~> 0.9.2'

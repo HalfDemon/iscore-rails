@@ -1,0 +1,2 @@
+module UsabilityReportsSubmissionsHelper
+end
