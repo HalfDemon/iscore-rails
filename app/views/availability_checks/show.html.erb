@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pubic run time:</b>
+  <%= @availability_check.pubic_run_time %>
+</p>
+
+<p>
+  <b>Actual start time:</b>
+  <%= @availability_check.actual_start_time %>
+</p>
+
+<p>
+  <b>Actual end time:</b>
+  <%= @availability_check.actual_end_time %>
+</p>
+
+<p>
+  <b>Number of services up:</b>
+  <%= @availability_check.number_of_services_up %>
+</p>
+
+<p>
+  <b>Number of services down:</b>
+  <%= @availability_check.number_of_services_down %>
+</p>
+
+
+<%= link_to 'Edit', edit_availability_check_path(@availability_check) %> |
+<%= link_to 'Back', availability_checks_path %>
