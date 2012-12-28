@@ -1,6 +1,9 @@
 require 'api_constraints'
 
 Iscore::Application.routes.draw do
+  resources :availability_service_checks
+
+
   resources :availability_checks
 
 
