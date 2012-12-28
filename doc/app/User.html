@@ -72,6 +72,14 @@
     
     <li><a href="#method-c-admin-3F">::admin?</a>
     
+    <li><a href="#method-c-blue-3F">::blue?</a>
+    
+    <li><a href="#method-c-green-3F">::green?</a>
+    
+    <li><a href="#method-c-red-3F">::red?</a>
+    
+    <li><a href="#method-c-white-3F">::white?</a>
+    
   </ul>
 </nav>
 
@@ -93,19 +101,93 @@
 
   <ul class="link-list">
   
+    <li><a href="./Api.html">Api</a>
+  
+    <li><a href="./Api/V1.html">Api::V1</a>
+  
+    <li><a href="./Api/V1/SitesController.html">Api::V1::SitesController</a>
+  
+    <li><a href="./Api/V1/UserController.html">Api::V1::UserController</a>
+  
+    <li><a href="./Ability.html">Ability</a>
+  
+    <li><a href="./AnomaliesController.html">AnomaliesController</a>
+  
+    <li><a href="./AnomaliesHelper.html">AnomaliesHelper</a>
+  
+    <li><a href="./Anomaly.html">Anomaly</a>
+  
+    <li><a href="./ApiConstraints.html">ApiConstraints</a>
+  
     <li><a href="./ApplicationController.html">ApplicationController</a>
   
     <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
   
-    <li><a href="./IntrusionReportCommentHelper.html">IntrusionReportCommentHelper</a>
+    <li><a href="./AvailabilityCheck.html">AvailabilityCheck</a>
   
-    <li><a href="./IntrusionReportsHelper.html">IntrusionReportsHelper</a>
+    <li><a href="./AvailabilityChecksController.html">AvailabilityChecksController</a>
+  
+    <li><a href="./AvailabilityChecksHelper.html">AvailabilityChecksHelper</a>
+  
+    <li><a href="./AvailabilityServiceCheck.html">AvailabilityServiceCheck</a>
+  
+    <li><a href="./AvailabilityServiceChecksController.html">AvailabilityServiceChecksController</a>
+  
+    <li><a href="./AvailabilityServiceChecksHelper.html">AvailabilityServiceChecksHelper</a>
+  
+    <li><a href="./DashboardController.html">DashboardController</a>
+  
+    <li><a href="./DashboardHelper.html">DashboardHelper</a>
+  
+    <li><a href="./Flag.html">Flag</a>
+  
+    <li><a href="./FlagsController.html">FlagsController</a>
+  
+    <li><a href="./FlagsHelper.html">FlagsHelper</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Service.html">Service</a>
+  
+    <li><a href="./ServiceType.html">ServiceType</a>
+  
+    <li><a href="./ServiceTypesController.html">ServiceTypesController</a>
+  
+    <li><a href="./ServiceTypesHelper.html">ServiceTypesHelper</a>
+  
+    <li><a href="./ServicesController.html">ServicesController</a>
+  
+    <li><a href="./ServicesHelper.html">ServicesHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
   
     <li><a href="./Site.html">Site</a>
   
     <li><a href="./SitesController.html">SitesController</a>
   
     <li><a href="./SitesHelper.html">SitesHelper</a>
+  
+    <li><a href="./UsabilityReport.html">UsabilityReport</a>
+  
+    <li><a href="./UsabilityReportsCheck.html">UsabilityReportsCheck</a>
+  
+    <li><a href="./UsabilityReportsChecksController.html">UsabilityReportsChecksController</a>
+  
+    <li><a href="./UsabilityReportsChecksHelper.html">UsabilityReportsChecksHelper</a>
+  
+    <li><a href="./UsabilityReportsController.html">UsabilityReportsController</a>
+  
+    <li><a href="./UsabilityReportsHelper.html">UsabilityReportsHelper</a>
+  
+    <li><a href="./UsabilityReportsSubmission.html">UsabilityReportsSubmission</a>
+  
+    <li><a href="./UsabilityReportsSubmissionsController.html">UsabilityReportsSubmissionsController</a>
+  
+    <li><a href="./UsabilityReportsSubmissionsHelper.html">UsabilityReportsSubmissionsHelper</a>
   
     <li><a href="./User.html">User</a>
   
@@ -169,6 +251,11 @@ to see who did what.</p>
         <dd class="description">
         
       
+        <dt id="VALID_EMAIL_REGEX">VALID_EMAIL_REGEX
+        
+        <dd class="description">
+        
+      
       </dl>
     </section>
     
@@ -197,7 +284,7 @@ to see who did what.</p>
 
           
           <div class="method-source-code" id="admin-3F-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 32</span>
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 61</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">admin?</span>
         <span class="ruby-keyword">self</span>.<span class="ruby-identifier">admin</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">true</span>
 <span class="ruby-keyword">end</span></pre>
@@ -209,6 +296,126 @@ to see who did what.</p>
 
         
       </div><!-- admin-3F-method -->
+
+    
+      <div id="method-c-blue-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">blue?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="blue-3F-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 77</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">blue?</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">team</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Blue&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- blue-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- blue-3F-method -->
+
+    
+      <div id="method-c-green-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">green?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="green-3F-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">green?</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">team</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Green&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- green-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- green-3F-method -->
+
+    
+      <div id="method-c-red-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">red?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="red-3F-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 65</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">red?</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">team</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Red&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- red-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- red-3F-method -->
+
+    
+      <div id="method-c-white-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">white?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="white-3F-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">white?</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">team</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;White&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- white-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- white-3F-method -->
 
     
     </section><!-- public-class-method-details -->

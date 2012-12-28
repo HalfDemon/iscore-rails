@@ -11,6 +11,6 @@ class CreateUsabilityReportsChecks < ActiveRecord::Migration
     end
     add_index :usability_reports_checks, :site_id
     add_index :usability_reports_checks, :service_id
-    add_index :usability_reports_checks, :usability_reports_submission_id
+    add_index :usability_reports_checks, :usability_reports_submission_id, name: 'usabilty_report_sub_id'
   end
 end

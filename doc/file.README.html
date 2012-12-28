@@ -6,7 +6,7 @@
 <title>
   File: README
   
-    &mdash; Documentation by YARD 0.8.2.1
+    &mdash; Documentation by YARD 0.8.3
   
 </title>
 
@@ -61,227 +61,596 @@
 
     <iframe id="search_frame"></iframe>
 
-    <div id="content"><div id='filecontents'>
-<h1>Welcome to IScorE-rails</h1>
+    <div id="content"><div id='filecontents'><h1>Welcome to IScorE-rails</h1>
 
 <p>IScorE-rails is a Cyber Denfense Competition scoring system.</p>
 
-<p><a href="http://travis-ci.org/Mab879/iscore-rails"><img
-src="https://secure.travis-ci.org/Mab879/iscore-rails.png?branch=master"
-alt="Build Status" /></a> <a
-href="https://codeclimate.com/github/mab879/iscore-rails"><img
-src="https://codeclimate.com/badge.png" /></a></p>
+<p><a href="http://travis-ci.org/Mab879/iscore-rails"><img src="https://secure.travis-ci.org/Mab879/iscore-rails.png?branch=master" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/Mab879/iscore-rails/"><img src="https://codeclimate.com/badge.png" alt="Code Climate"></a>
+<a href="http://rails-brakeman.com/mab879/iscore-rails"><img src="http://rails-brakeman.com/mab879/iscore-rails.png" alt="Brakeman"></a>
+<a href="https://gemnasium.com/Mab879/iscore-rails"><img src="https://gemnasium.com/Mab879/iscore-rails.png" alt="Dependency Status"></a></p>
 
-<p>This applcation uses the Iowa State and IT-Adventures Cyber Defense Cyber
-Defense Competition structure and naming  conventions. Please feel free to
-fork the project and change the names for your type of Cyber Defense
-Competition.</p>
+<p>This applcation uses the Iowa State and IT-Adventures Cyber
+Defense Cyber Defense Competition structure and naming 
+conventions. Please feel free to fork the project and
+change the names for your type of Cyber Defense Competition.</p>
 
-<p>PLEASE NOTE: ISorE-rails is based off the rules, scoring, etc. from the
-2012 IT-Adventures  competition. Please change this application for YOUR
-CDC.</p>
+<p><strong>PLEASE NOTE</strong>: ISorE-rails is based off the rules, scoring, etc. from the 2012 IT-Adventures 
+competition. Please change this application for YOUR CDC.</p>
 
-<h2>Team Descriptons (from the <a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">Offical Iowa State Documention</a>)</h2>
+<p><strong>ANOTHER NOTE:</strong> Please take note that most of have is descriped below isn&#39;t created yet. The point of this
+README is to tell you what ISorE-rails is and the the people who work on this project what the should 
+be doing and how.</p>
 
-<p>POST SCRIPT: Please take note that most of have is descriped below isn’t
-created yet. The point of this README is to tell you what ISorE-rails is
-and the the people who work on this project what the should  be doing and
-how.</p>
+<h2>Contributing</h2>
+
+<p>Want to give back to IScorE-rails? Follow theses steps</p>
+
+<ol>
+<li>Clone the Repo from the <a href="https://github/mab879/iscore-rails">main repo</a></li>
+<li>Fork the repo on your account</li>
+<li>Make a title branch for your changes</li>
+<li>Make your changes</li>
+<li>Make serval commits for change (not required, but helpful)
+
+<ul>
+<li>Break down your change into logical steps.</li>
+</ul></li>
+<li>Push the changes to your fork</li>
+<li>Submit a pull request to the <a href="https://github.com/Mab879/iscore-rails">main repo</a></li>
+<li>Wait. The core team will look the changes. They may ask you to make some 
+changes. If they do move to step 9 (nine). If not you&#39;re done</li>
+<li>If changes were requested please make the changes on the same topic branch and push them for your fork.</li>
+<li>Go back to Step 8, (repeat if needed)
+## NOTE:
+<a href="http://mab879.github.com/iscore-rails/database_map.html%20Schema%20Page">The Schmea is Here</a></li>
+</ol>
 
 <h2>Team Descriptons (<a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">from the Offical Iowa State Documention</a>)</h2>
-<ul><li>
-<p>Blue Teams - Competitors playing the role of the Information Assurance
-community.  These</p>
-</li></ul>
 
-<p>teams must identify and defend against various security threats via the
-Competition network.</p>
-<ul><li>
-<p>Red Team - Comprised of professionals from the Information Assurance
-community playing the</p>
-</li></ul>
+<ul>
+<li><p>Blue Teams - Competitors playing the role of the Information Assurance community.  These
+teams must identify and defend against various security threats via the Competition network.</p></li>
+<li><p>Red Team - Comprised of professionals from the Information Assurance community playing the
+role of hackers.  This team must create and implement various attack strategies against the Blue
+Teams, and capture flags from the Blue Team servers.</p></li>
+<li><p>White Team - Comprised of respected individuals from the Information Assurance community.
+This team is the judging authority for the CDC.</p></li>
+<li><p>Green Team - This team consists of members with various computer familiarity and skill levels.
+They play the role of typical network users.  The Green Team duties include regular Internet
+usage and the execution of predefined anomalies.</p></li>
+</ul>
 
-<p>role of hackers.  This team must create and implement various attack
-strategies against the Blue Teams, and capture flags from the Blue Team
-servers.</p>
-<ul><li>
-<p>White Team - Comprised of respected individuals from the Information
-Assurance community.</p>
-</li></ul>
+<h2>Terms Glossery (<a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">from the Offical Iowa State Documention</a>)</h2>
 
-<p>This team is the judging authority for the CDC.</p>
-<ul><li>
-<p>Green Team - This team consists of members with various computer
-familiarity and skill levels.</p>
-</li></ul>
-
-<p>They play the role of typical network users.  The Green Team duties include
-regular Internet usage and the execution of predefined anomalies.</p>
-
-<h2>Terms Glossery (from the <a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">Offical Iowa State Documention</a>)</h2>
-<ul><li>
-<p>Blue Teams - Competitors playing the role of the Information Assurance
-community.  These</p>
-</li><li>
-<p>Flag - a ncrypted file placed in a predefined location.  The Red Team much
-capture these</p>
-</li></ul>
-
-<p>flags from or plant them onto teams’ systems.</p>
-<ul><li>
-<p>Anomalies - These events are injected into the system at various times
-throughout the</p>
-</li></ul>
-
-<p>competition.  The Anomalies are designed to test, or simply just
-complicate, the Blue Team duties during the competition.</p>
-<ul><li>
-<p>CDC Director - Oversees the operation of the CDC, leads the White</p>
-</li></ul>
-
-<p>Team in scoring and adjudication, and coordinates the Red, Green, and Blue
-Teams.</p>
+<ul>
+<li><p>Flag - a ncrypted file placed in a predefined location.  The Red Team much capture these
+flags from or plant them onto teams’ systems.</p></li>
+<li><p>Anomalies - These events are injected into the system at various times throughout the
+competition.  The Anomalies are designed to test, or simply just complicate, the Blue Team
+duties during the competition.  </p></li>
+<li><p>CDC Director - Oversees the operation of the CDC, leads the White
+Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams.</p></li>
+</ul>
 
 <h2>IScorE-rails Terms</h2>
-<ul><li>
-<p>Document - A documention for the White and Green Teams or other purposes.</p>
-</li><li>
-<p>Anomalies - A optional chanllages made by the Green Team Leader. This will
-give Blue Teams additanal points.</p>
-</li><li>
-<p>Green Team Usability Reports: These are manully checks by the Green Team to
-test the Blue Teams’ Services. These forms will need changed for each year
-of your CDC. The IScorE-rails will use the 2012 IT-Adventures Cyber
-Defense. The checks have check boxs. You check if the service is up and
-don’t if it isn’t. It is also recommend to add a comment about each outage.</p>
-</li></ul>
+
+<ul>
+<li><p>Document - A documention for the White and Green Teams or other purposes.</p></li>
+<li><p>Anomalies - A optional, or not, chanllages made by the Green Team Leader. This will give Blue Teams additanal points.</p></li>
+<li><p>Green Team Usability Reports: These are manully checks by the Green Team to test the Blue Teams&#39;
+Services. These forms will need changed for each year of your CDC.
+The IScorE-rails will use the 2012 IT-Adventures Cyber Defense. The checks
+have check boxs. You check if the service is up and don&#39;t if it isn&#39;t. It
+is also recommend to add a comment about each outage.</p></li>
+</ul>
 
 <h2>Flags</h2>
-<ul><li>
-<p>Flags are made by Competion Director. The Read Team will marks theses flags
-as captured when the discover them. The will enter the flag into the text
-field on the flag page for later verifition.</p>
-</li><li>
-<p>Also if the Red Team is able to capture the flag the Blue Team can send a
-report back, via a text field, to able back points, up to half. These will
-be judged by the Red and White teams.</p>
-</li></ul>
+
+<ul>
+<li><p>Flags are made by Competion Director. The Read Team will marks theses flags as captured when the discover them.
+The will enter the flag into the text field on the flag page for later verifition. </p></li>
+<li><p>Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
+field, to able back points, up to half. These will be judged by the Red and White teams.</p></li>
+</ul>
+
+<h4>Schema</h4>
+
+<h5>Flag (<code>flag</code>)</h5>
+
+<ul>
+<li><code>name</code>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>Name of Flag </li>
+<li>Examples
+
+<ul>
+<li>SSH - Read</li>
+<li>SSH - Write
+
+<ul>
+<li>WWW - Read
+
+<ul>
+<li>WWW - Write</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><code>path</code>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>Where the flag is stored</li>
+<li>Examples
+    * /root
+    * C:\Users\Admin</li>
+</ul></li>
+</ul>
+
+<h4>Flag Capture (<code>flag_capture</code>)</h4>
+
+<ul>
+<li><code>flag_id</code>
+
+<ul>
+<li>required</li>
+<li>interger</li>
+</ul></li>
+<li><code>captured_flag</code>
+
+<ul>
+<li>required</li>
+<li><code>text</code></li>
+<li>What was the content of flag captured</li>
+</ul></li>
+<li><code>site_id</code>
+
+<ul>
+<li>required</li>
+<li>integer</li>
+<li>What site does the flag belong to</li>
+</ul></li>
+</ul>
 
 <h2>Intrusion Reports</h2>
-<ul><li>
-<p>Intrusion reports are periodic reports that are submitted by the Blue
-Teams.</p>
-</li><li>
-<p>This report is where the teams will tell what isn’t or is happening with
-there networks and services.</p>
-</li><li>
-<p>These are juged by the White Team</p>
-</li><li>
-<p>Only one report per reporting period.</p>
-</li></ul>
+
+<ul>
+<li><p>Intrusion reports are periodic reports that are submitted by the Blue Teams. </p></li>
+<li><p>This report is where the teams will tell what isn&#39;t or is happening with there networks and services.</p></li>
+<li><p>These are juged by the White Team</p></li>
+<li><p>Only one report per reporting period.</p></li>
+</ul>
+
+<h3>Schema</h3>
+
+<h4>Intrusion Reports (<code>intrusion_report</code>)</h4>
+
+<ul>
+<li><p><code>name</code></p>
+
+<ul>
+<li>Required</li>
+<li><code>string</code></li>
+<li>The Name of the report </li>
+<li>This should named Report for X AM / PM. 
+
+<ul>
+<li>Where x is the time due</li>
+</ul></li>
+</ul></li>
+<li><p><code>start_time</code></p>
+
+<ul>
+<li>required</li>
+<li><code>datetime</code></li>
+<li>The time that teams are submit the report</li>
+</ul></li>
+<li><p><code>due_time</code></p>
+
+<ul>
+<li>requried</li>
+<li><code>datetime</code></li>
+<li>The time that must sumbit the report by</li>
+</ul></li>
+<li><p><code>special_instructions</code></p>
+
+<ul>
+<li><code>text</code></li>
+<li>Anything special that this </li>
+</ul></li>
+</ul>
+
+<h4>Intrusion Report Submissions (intrusion_report_submission)</h4>
+
+<ul>
+<li><code>content</code>
+
+<ul>
+<li>required</li>
+<li>What the team said</li>
+</ul></li>
+<li><p><code>read</code>  </p>
+
+<ul>
+<li>can&#39;t be true on create</li>
+<li>Has the team&#39;s report been ready yet by the white team</li>
+<li><code>points_earned</code></li>
+<li>Must be blank on create</li>
+<li><code>integer</code></li>
+<li>How many points did they earn</li>
+<li><code>site_id</code> </li>
+<li>required</li>
+<li><code>integer</code></li>
+<li>What site made the report</li>
+<li><code>intrusion_report_id</code> </li>
+<li>required</li>
+<li><code>integer</code></li>
+<li>What report / time period is the submission for</li>
+</ul></li>
+</ul>
 
 <h2>Green Team Usability Reports</h2>
-<ul><li>
-<p>Started by Green Team Leader</p>
-</li><li>
-<p>Then Started only Green Team Memebers can see theses scores and edit theme</p>
-</li><li>
-<p>The score will be released to Blue Teams after all reports are done and 
-the scores are released by Green Team Leader</p>
-</li></ul>
+
+<ul>
+<li><p>Started by Green Team Leader</p></li>
+<li><p>Then Started only Green Team Memebers can see theses scores and edit theme</p></li>
+<li><p>The score will be released to Blue Teams after all reports are done and 
+the scores are released by Green Team Leader</p></li>
+</ul>
+
+<h3>Schema</h3>
+
+<h4>Usability Reports (<code>usability_report</code>)</h4>
+
+<ul>
+<li><p><code>name</code></p>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>Can be anything that descibes that report
+
+<ul>
+<li>Examples
+
+<ul>
+<li>Morning Check</li>
+<li>Check 1</li>
+<li>Monday Morning Check</li>
+<li>3:00 PM Check</li>
+</ul></li>
+</ul></li>
+<li>It&#39;s really up leaders to the compeition</li>
+</ul></li>
+<li><p><code>start_time</code></p>
+
+<ul>
+<li>required</li>
+<li><code>datetime</code></li>
+<li>When Green Team Members can start submiting reports</li>
+</ul></li>
+<li><p><code>due_date</code></p>
+
+<ul>
+<li>not required on create, needed to publish</li>
+<li><code>datetime</code></li>
+<li> It is recommend <strong>NOT</strong> to set this until time to publish</li>
+</ul></li>
+<li><p><code>published</code></p>
+
+<ul>
+<li>required to be false on create</li>
+<li>boolean</li>
+<li>It it added to blue teams scores</li>
+</ul></li>
+</ul>
+
+<h4>Usability Reports Submission (<code>usability_reports_submission</code>)</h4>
+
+<ul>
+<li><p><code>site_id</code> </p>
+
+<ul>
+<li>required</li>
+<li><code>integer</code></li>
+<li>What site submited the report</li>
+</ul></li>
+<li><p><code>comments</code></p>
+
+<ul>
+<li>not required</li>
+<li><code>text</code></li>
+<li>This field can used to desribe that wasn&#39;t working, etc.</li>
+</ul></li>
+<li><p><code>done_by</code></p>
+
+<ul>
+<li>required</li>
+<li><code>integer</code></li>
+<li>What user (id) sumbited this check</li>
+</ul></li>
+<li><p>The checks that are need are a separate model</p></li>
+</ul>
+
+<h4>Service (<code>service</code>)</h4>
+
+<ul>
+<li>A tooltip will show these details on the Usability Reports</li>
+<li>This is shared wit the the service scanner</li>
+<li><code>name</code>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>Name of Service</li>
+<li>Examples
+
+<ul>
+<li>Web Server - WWW</li>
+<li>Web Server - FTP</li>
+<li>Remote Desktop - RDP</li>
+<li>Wiki Server - WWW</li>
+</ul></li>
+</ul></li>
+<li><code>port</code>
+
+<ul>
+<li>required </li>
+<li><code>integer</code></li>
+<li>What port is this service on</li>
+<li>Examples:
+
+<ul>
+<li>80</li>
+<li>21</li>
+<li>3389</li>
+<li>22</li>
+</ul></li>
+</ul></li>
+<li><code>subdomain</code>
+
+<ul>
+<li>required</li>
+<li><code>string</code></li>
+<li>What subdomain is it on</li>
+<li>Example
+
+<ul>
+<li>www 
+<a href="http://www.site1.cdc.com">www.site1.cdc.com</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h4>Usability Reports Check (usability_reports_check)</h4>
+
+<pre class="code ruby"><code>`works`
+    * requred
+    * `boolean`
+    * Does the service work as expected
+* `site_id`
+    * required
+    * integer 
+* `service_id`
+    * required
+    * integer
+* `usability_report_id`
+    * required
+    * integer 
+</code></pre>
 
 <h2>Anomalies</h2>
-<ul><li>
-<p>Created by the Green Team Leader</p>
-</li><li>
-<p>Done by the Blue Team</p>
-</li><li>
-<p>Juged by the Green Team Leaders and/ or members</p>
-</li></ul>
+
+<ul>
+<li><p>Created by the Green Team Leader</p></li>
+<li><p>Done by the Blue Team </p></li>
+<li><p>Judged by the Green Team Leaders and/ or members</p></li>
+</ul>
 
 <h2>Documentaion</h2>
-<ul><li>
-<p>Created by Blue Teams</p>
-</li><li>
-<p>Used by Green and White Teams</p>
-</li><li>
-<p>Juged by Green and White Teams</p>
-</li></ul>
+
+<ul>
+<li><p>Created by Blue Teams</p></li>
+<li><p>Used by Green and White Teams, or others as you see fit</p></li>
+<li><p>Juged by Green and White Teams, again as you see fit</p></li>
+</ul>
 
 <h2>Perimisions</h2>
-<ul><li>
-<p>Each User has a Team membership to a team.</p>
-</li><li>
-<p>It will be to one of the following:</p>
-<ul><li>
-<p>Blue</p>
-</li><li>
-<p>Green</p>
-</li><li>
-<p>Red</p>
-</li><li>
-<p>White</p>
-</li><li>
-<p>Admin: Access to all teams</p>
-</li></ul>
-</li><li>
-<p>If the user is one of red, green, blue, or white teams he or she will only
-be able  to access that area of ISorE-rails.</p>
-</li><li>
-<p>On the Blue Team Users only see their teams items</p>
-</li><li>
-<p>Admins have access to all</p>
-</li><li>
-<p>These are defined in <tt>app/models/ability.rb</tt>.</p>
-</li><li>
-<p>Autherztion is done by CanCan(<a
-href="https://github.com/ryanb/cancan">github.com/ryanb/cancan</a>/) by
-Bates(<a href="https://github.com/ryanb">github.com/ryanb</a>)</p>
-</li></ul>
+
+<ul>
+<li><p>Each User has a Team membership to a team. </p></li>
+<li><p>It will be to one of the following:</p>
+
+<ul>
+<li>Blue </li>
+<li>Green</li>
+<li>Red</li>
+<li>White</li>
+<li>Admin: Access to all teams</li>
+</ul></li>
+<li><p>If the user is one of red, green, blue, or white teams he or she will only be able 
+to access that area of ISorE-rails.</p></li>
+<li><p>On the Blue Team Users only see their teams items during the allowed time</p></li>
+<li><p>Admins have access to all</p></li>
+<li><p>These are defined in <code>app/models/ability.rb</code>.</p></li>
+<li><p>Authorization is done by <a href="https://github.com/ryanb/cancan/">CanCan</a> by <a href="https://github.com/ryanb">Ryan Bates</a></p></li>
+<li><p>Authentication is handle, by default, is username and password model. Password are in encrypted via BCrypt. 
+Methods that are used are provioded by Ruby on Rails&#39; <code>has_secure_password</code> methods. </p></li>
+</ul>
+
+<h2>Team Acess</h2>
+
+<h3>Blue Teams</h3>
+
+<ul>
+<li>Have access write (and read) access to:
+
+<ul>
+<li>Their Green Team Anaoiles respones</li>
+<li>Their Flag earn back reports, after the flag was taken</li>
+<li>Their Periodic Intrusion reports BEFORE the Deadline</li>
+</ul></li>
+<li>Have read access to 
+
+<ul>
+<li>Their Flag Status</li>
+<li>Their Score</li>
+<li>Their Services Uptime</li>
+<li>Their Services Status</li>
+<li>Anomalies created by the Green Team</li>
+<li>Comments about their reports</li>
+<li>Green Team Usablity checks once published</li>
+</ul></li>
+</ul>
+
+<h3>Red Team</h3>
+
+<ul>
+<li>Flags
+
+<ul>
+<li>Status</li>
+<li>Capurted Flag (must have Capurted flag to change status)</li>
+<li>The real flag is hidden from view</li>
+</ul></li>
+</ul>
+
+<h3>Green Team</h3>
+
+<ul>
+<li>Have write (and read)
+
+<ul>
+<li>Useablity Reports</li>
+<li>Anomalies (Read Only)</li>
+<li>Points</li>
+<li>Respone</li>
+</ul></li>
+<li>Have Read Access To:
+
+<ul>
+<li>Anaomalies (the challange)</li>
+</ul></li>
+</ul>
+
+<h3>Admin Team</h3>
+
+<ul>
+<li>Read and Write to all items</li>
+</ul>
 
 <h2>Team Dashbaords</h2>
-<ul><li>
-<p>The can be found at (ISorE_host)/dashboard/(team_color)</p>
-</li><li>
-<p>Access is restricted by the rules above</p>
-</li></ul>
+
+<ul>
+<li><p>The can be found at <code>(ISorE_host)/dashboard/(team_color)</code></p></li>
+<li><p>Access is restricted by the rules above</p></li>
+</ul>
+
+<h2>Competion Time</h2>
+
+<p>This section talks about the starting and ending times of the CDC</p>
+
+<p>Before the CDC beings the follow is allowed:
+  * Admins
+    * Access to all
+  * Blue Teams
+   * Read-Only all objects expect:
+     * Documention
+    * Red Team
+      * All Access is denied
+    * Green Team
+     * All Access is denied
+    * White Team
+      * Read access to all
+      * Write access to sites
+      * Write acesss to users</p>
+
+<p>During the CDC the permissions allow above.</p>
+
+<p>After the CDC the permissions are the same expect for:
+  * Blue Team
+    * All Access is denied</p>
 
 <h2>Service checks</h2>
-<ul><li>
-<p>The SCANNER currenly NOT apart of IScorE-rails</p>
-</li><li>
-<p>Might make our own later as differnt project</p>
-</li><li>
-<p>If you wnat service scores, update status, etc you will need to intergate /
-roll your own</p>
-</li><li>
-<p>If you roll your own please note the following</p>
-</li><li>
-<p>IScorE-rails expects thats you give it the infomation like so</p>
-</li><li>
-<p>(ISorE_host)/api/v1/uptime/add/(site_number)/(service_name_id)/(status)/(auth_token)</p>
-</li><li>
-<p><tt>site_number</tt> =  The owner of the service that is being checked. If
-you where checking Site 1 it would be 1</p>
-</li><li>
-<p><tt>service_name_id</tt> The id of the service that is being checked. These
-are stored in the services model.  the ids are listed in the admin section.</p>
-</li><li>
-<p><tt>status</tt> This is must be 0 or 1. 0 for being down. 1 for being up.</p>
-</li><li>
-<p><tt>auth_token</tt> The API token</p>
-</li></ul>
+
+<ul>
+<li><p>The SCANNER currenly NOT apart of IScorE-rails</p></li>
+<li><p>Might make our own later as differnt project</p></li>
+<li><p>If you want service scores, update status, etc you will need to intergate / roll your own</p></li>
+<li><p>If you roll your own please note the following</p></li>
+<li><p>IScorE-rails expects thats you give it the infomation like so</p></li>
+<li><p><code>(ISorE_host)/api/v1/uptime/add/(site_number)/(service_name_id)/(status)/(auth_token)</code></p>
+
+<ul>
+<li><code>site_number</code> =  The owner of the service that is being checked. If you where checking Site 1 it would be 1</li>
+<li><code>service_name_id</code> The id of the service that is being checked. These are stored in the services model. 
+the ids are listed in the admin sectiaon.</li>
+<li><code>status</code> This is must be 0 or 1. 0 for being down. 1 for being up.</li>
+<li><code>auth_token</code> The API token (see the API section for more deatils)</li>
+</ul></li>
+</ul>
+
+<h2>API</h2>
+
+<ul>
+<li><p>Some of the functions of IScorE are accessable and/ or use the API to the task they were designed to do.</p></li>
+<li><p>To use the API use must be a member of the admin team.</p></li>
+<li><p>There is ONE, API key for the whole App.</p></li>
+<li><p>If you reset the API token <strong>YOU WILL BREAK EVERYTHING THAT USES IT. YES, REALLY</strong>. </p></li>
+<li><p>If you are using the service scanner and change API token <strong>YOU WILL BREAK IT</strong></p></li>
+<li><p>If you are using an third party service and change the API token <strong>YOU WILL</strong> break things</p></li>
+<li><p>The API is versioned currenly we are on version 1 (one) of the api.</p></li>
+<li><p>The API can be found at <code>(IScorE_host)/api/v1/</code></p></li>
+</ul>
 
 <h2>Scoring</h2>
-<ul><li>
-<p>Scoring is the very heart of IScorE</p>
-</li></ul>
+
+<pre class="code ruby"><code>### Schmea
+#### Point Award (`point_award`)
+    * `site_id`
+        * required
+        * `interger`
+
+    * `earned_point` 
+        * required
+        * `integer`
+        * How Many Points Earned
+            * Can be any interger (postive and negtive)
+
+
+    * `possible_points`
+        * required
+        * `interger`
+        * How many points could be earned
+            * Needs to be `0` if the point is a 
+                * Pentaly
+                * Adjustment
+
+    * `published` 
+        * required
+        * `boolean` 
+        * Can the blue teams see it
+
+    * `type` 
+        * required 
+        * `string` 
+        * What type points are these
+
+    * `reason` 
+     * `text`
+     * What were point(s) awared: requred if penilty (negtive earned_points value)
+</code></pre>
 </div></div>
 
     <div id="footer">
-  Generated on Wed Jul 25 21:45:48 2012 by
+  Generated on Fri Dec 28 15:03:08 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.2.1 (ruby-1.9.3).
+  0.8.3 (ruby-1.9.3).
 </div>
 
   </body>
