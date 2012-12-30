@@ -1,5 +1,6 @@
 namespace :availabilitycheck do
   task :create do
+    puts "This task creates the service checks for the competions"
     puts "How many minutes between each check?"
     puts "Examples"
     puts ""
@@ -10,5 +11,21 @@ namespace :availabilitycheck do
     puts ""
     puts "Enter the amount time between each scan in mintues"
     puts "Can't less than 5 minutes to ensure proper performace"
+    minutes_between = $stdin.gets.chomp
+    puts ""
+    puts ""
+    puts "Enter the CDC start time"
+    puts "This will be the first scan time"
+    puts "The format for field can be any of the follows:"
+    puts "- 01/10/12 8:00 AM"
+    puts "- Jan 10 12 8 AM"
+    puts "- 01-10-12 08:00 AM"
+    puts "- January 10, 2012 at 8 AM"
+    start_time = $stdin.gets.chomps
+    puts ""
+    puts ""
+    puts "Enter the CDC End Time"
+    puts "Same Instructions as for start time"
+    end_time = $stdin.gets.chomps
   end
 end
