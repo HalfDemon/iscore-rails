@@ -27,5 +27,9 @@ namespace :availabilitycheck do
     puts "Enter the CDC End Time"
     puts "Same Instructions as for start time"
     end_time = $stdin.gets.chomps
+    puts ""
+    puts "Work Time......."
+    puts "The script is working to create your Checks..."
+    total_time = end_time - start_time
   end
 end
