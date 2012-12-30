@@ -1,0 +1,2 @@
+namespace :availabilitycheck do
+end
