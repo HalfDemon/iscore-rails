@@ -12,3 +12,15 @@
 1. Create the Sites
 
 2. Create the Users
+ 
+3. Create Service Types
+
+4. Create Services for each Site
+
+5.Create the Flags
+
+6. Create the Anomalies
+
+7. Create Availability Checks
+
+8. Create Usability Report
