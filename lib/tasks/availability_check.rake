@@ -30,6 +30,10 @@ namespace :availabilitycheck do
     puts ""
     puts "Work Time......."
     puts "The script is working to create your Checks..."
+    seconds_between = minutes_between * 60
     total_time = end_time - start_time
+    nubmer_of_checks_unrounded = total_time / second_between
+    number_of_checks = nubmer_of_checks_unrounded.round
+    
   end
 end
