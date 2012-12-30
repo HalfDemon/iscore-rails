@@ -11,7 +11,7 @@ namespace :availabilitycheck do
     puts ""
     puts "Enter the amount time between each scan in mintues"
     puts "Can't less than 5 minutes to ensure proper performace"
-    minutes_between = $stdin.gets.chomp
+    minutes_between = $stdin.gets.chomp.to_i
     puts ""
     puts ""
     puts "Enter the CDC start time"
@@ -21,12 +21,12 @@ namespace :availabilitycheck do
     puts "- Jan 10 12 8 AM"
     puts "- 01-10-12 08:00 AM"
     puts "- January 10, 2012 at 8 AM"
-    start_time = $stdin.gets.chomps
+    start_time = Chronic.parse($stdin.gets.chomps)
     puts ""
     puts ""
     puts "Enter the CDC End Time"
     puts "Same Instructions as for start time"
-    end_time = $stdin.gets.chomps
+    end_time = Chronic.parse($stdin.gets.chomps)
     puts ""
     puts "Work Time......."
     puts "The script is working to create your Checks..."
@@ -34,6 +34,12 @@ namespace :availabilitycheck do
     total_time = end_time - start_time
     nubmer_of_checks_unrounded = total_time / second_between
     number_of_checks = nubmer_of_checks_unrounded.round
-    
+    current_run_time = start_time
+    number_of_checks.times do
+      AvailabilityCheck.create!(public_run_time: current_run_time)
+      puts "Created Availability Check at #{current_run_time}"
+      current_run_time += minutes_between.minutes
+      puts ""
+    end
   end
 end
