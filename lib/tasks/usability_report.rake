@@ -54,9 +54,13 @@ namespace :usabilityreports do
     @services = Service.all
     @urss = UsabilityReportsSubmission.all
     for urs in @urss do
+      puts "Creating Services for Usability Reports Submission on Team #{urs.site.number}"
       @team_services = urs.site.services.all
       for service in @team_services do
-        
+        site.usabilityreportschecks.create!(
+            service_id: service.id,
+            usability_reports_submission: urs.id
+          )
       end
     end
   end
