@@ -35,7 +35,7 @@ namespace :usabilityreports do
     number_of_checks = nubmer_of_checks_unrounded.round
     current_run_time = start_time
     number_of_checks.times do
-     UsabilityReport.create!(start_time: current_run_time
+     UsabilityReport.create!(start_time: current_run_time)
       puts "Created Usability Report at #{current_run_time}"
       current_run_time += minutes_between.minutes
       puts ""
