@@ -6,6 +6,12 @@ class ApplicationController < ActionController::Base
   		redirect_to root_url
   	end
   end
+  
+  
+  def create_flag_content(site, service)
+    flag_content = "#{Time.now.utc}#{site.id}#{site.number}#{service.id}#{service.port}#{site.id}#{Time.now.utc}#{site.created_at}#{service.created_at}#{Time.now.utc + 6.hours + 45.seconds}#{rand(-9999999..9999999)*432}"
+    Password.create(flag_content)
+  end
 
 # Config
 #
