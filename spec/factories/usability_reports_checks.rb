@@ -3,8 +3,8 @@
 FactoryGirl.define do
   factory :usability_reports_check do
     work false
-    site nil
-    service nil
+    site site
+    service service
     use "MyString"
     usability_reports_submission nil
   end

@@ -24,7 +24,11 @@ describe UsabilityReportsSubmissionsController do
   # UsabilityReportsSubmission. As you add validations to UsabilityReportsSubmission, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {
+        done_by: create(:user),
+        site_id: create(:site)
+
+    }
   end
   
   # This should return the minimal set of values that should be in the session
