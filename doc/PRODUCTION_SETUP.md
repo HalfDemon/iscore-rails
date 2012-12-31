@@ -21,7 +21,7 @@
 
 4. Create Services for each Site
 
-5.Create the Flags
+5. Create the Flags
 
 6. Create the Anomalies
 
