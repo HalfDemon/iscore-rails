@@ -35,10 +35,29 @@ namespace :usabilityreports do
     number_of_checks = nubmer_of_checks_unrounded.round
     current_run_time = start_time
     number_of_checks.times do
-      AvailabilityCheck.create!(public_run_time: current_run_time)
-      puts "Created Availability Check at #{current_run_time}"
+     UsabilityReport.create!(start_time: current_run_time
+      puts "Created Usability Report at #{current_run_time}"
       current_run_time += minutes_between.minutes
       puts ""
+    end
+    puts "Done creating Usability Reports"
+    puts ""
+    puts ""
+    puts "Creating Usability Report Submissions"
+    @usability_reports = UsabilityReport.all
+    @sites = Site.all
+    for usability_report in @usability_reports do
+      for site in @sites
+        site.usabilityreportssubmissions.create
+      end
+    end
+    @services = Service.all
+    @urss = UsabilityReportsSubmission.all
+    for urs in @urss do
+      @team_services = urs.site.services.all
+      for service in @team_services do
+        
+      end
     end
   end
 end
