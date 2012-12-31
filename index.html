@@ -46,10 +46,8 @@ change the names for your type of Cyber Defense Competition.</p>
 competition. Please change this application for YOUR CDC.</p>
 
 <p><strong>ANOTHER NOTE:</strong> Please take note that most of have is descriped below isn't created yet. The point of this
-README is to tell you what ISorE-rails is and the the people who work on this project what the should be doing and how.</p>
-
-<p><strong>ALSO</strong>
-<a href="http://mab879.github.com/iscore-rails/database_map.html">The Schmea is Here</a></p>
+README is to tell you what ISorE-rails is and the the people who work on this project what the should 
+be doing and how.</p>
 
 <h2>Contributing</h2>
 
@@ -73,7 +71,10 @@ README is to tell you what ISorE-rails is and the the people who work on this pr
 <li>Wait. The core team will look the changes. They may ask you to make some 
 changes. If they do move to step 9 (nine). If not you're done</li>
 <li>If changes were requested please make the changes on the same topic branch and push them for your fork.</li>
-<li>Go back to Step 8, (repeat if needed)</li>
+<li>Go back to Step 8, (repeat if needed)
+## NOTE:
+<a href="http://mab879.github.com/iscore-rails/database_map.html%20Schema%20Page">The Schmea is Here</a>
+</li>
 </ol><h2>Team Descriptons (<a href="https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf">from the Offical Iowa State Documention</a>)</h2>
 
 <ul>
@@ -112,16 +113,15 @@ is also recommend to add a comment about each outage.</p></li>
 <ul>
 <li><p>Flags are made by Competion Director. The Read Team will marks theses flags as captured when the discover them.
 The will enter the flag into the text field on the flag page for later verifition. </p></li>
-<li>
-<p>Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
-field, to able back points, up to half. These will be judged by the Red and White teams.</p>
-
-<h4>Schema</h4>
+<li><p>Also if the Red Team is able to capture the flag the Blue Team can send a report back, via a text
+field, to able back points, up to half. These will be judged by the Red and White teams.</p></li>
+</ul><h4>Schema</h4>
 
 <h5>Flag (<code>flag</code>)</h5>
-</li>
+
+<ul>
 <li>
-<p><code>name</code></p>
+<code>name</code>
 
 <ul>
 <li>required</li>
@@ -147,7 +147,7 @@ field, to able back points, up to half. These will be judged by the Red and Whit
 </ul>
 </li>
 <li>
-<p><code>path</code></p>
+<code>path</code>
 
 <ul>
 <li>required</li>
@@ -155,12 +155,14 @@ field, to able back points, up to half. These will be judged by the Red and Whit
 <li>Where the flag is stored</li>
 <li>Examples
     * /root
-    * C:\Users\Admin
-#### Flag Capture (<code>flag_capture</code>)</li>
+    * C:\Users\Admin</li>
 </ul>
 </li>
+</ul><h4>Flag Capture (<code>flag_capture</code>)</h4>
+
+<ul>
 <li>
-<p><code>flag_id</code></p>
+<code>flag_id</code>
 
 <ul>
 <li>required</li>
@@ -168,7 +170,7 @@ field, to able back points, up to half. These will be judged by the Red and Whit
 </ul>
 </li>
 <li>
-<p><code>captured_flag</code></p>
+<code>captured_flag</code>
 
 <ul>
 <li>required</li>
@@ -177,7 +179,7 @@ field, to able back points, up to half. These will be judged by the Red and Whit
 </ul>
 </li>
 <li>
-<p><code>site_id</code></p>
+<code>site_id</code>
 
 <ul>
 <li>required</li>
@@ -234,40 +236,38 @@ field, to able back points, up to half. These will be judged by the Red and Whit
 <p><code>special_instructions</code></p>
 
 <ul>
-<li>Anything special that this 
-####  Intrusion Report Submissions (intrusion_report_submission)</li>
-<li><code>content</code></li>
+<li><code>text</code></li>
+<li>Anything special that this </li>
+</ul>
+</li>
+</ul><h4>Intrusion Report Submissions (intrusion_report_submission)</h4>
+
+<ul>
+<li>
+<code>content</code>
+
+<ul>
 <li>required</li>
 <li>What the team said</li>
-<li>
-<code>read</code><br>
-</li>
-<li>can't be true on create</li>
-<li>Has the team's report been ready yet by the white team</li>
 </ul>
 </li>
 <li>
-<p><code>points_earned</code></p>
+<p><code>read</code>  </p>
 
 <ul>
+<li>can't be true on create</li>
+<li>Has the team's report been ready yet by the white team</li>
+<li><code>points_earned</code></li>
 <li>Must be blank on create</li>
 <li><code>integer</code></li>
 <li>How many points did they earn</li>
-</ul>
-</li>
 <li>
-<p><code>site_id</code> </p>
-
-<ul>
+<code>site_id</code> </li>
 <li>required</li>
 <li><code>integer</code></li>
 <li>What site made the report</li>
-</ul>
-</li>
 <li>
-<p><code>intrusion_report_id</code> </p>
-
-<ul>
+<code>intrusion_report_id</code> </li>
 <li>required</li>
 <li><code>integer</code></li>
 <li>What report / time period is the submission for</li>
@@ -419,40 +419,29 @@ the scores are released by Green Team Leader</p></li>
 <ul>
 <li>www 
 <a href="http://www.site1.cdc.com">www.site1.cdc.com</a>
-#### Usability Reports Check (usability_reports_check)<br><code>works</code>
 </li>
-<li>requred</li>
-<li><code>boolean</code></li>
-<li>Does the service work as expected</li>
 </ul>
 </li>
-<li>
-<code>site_id</code>
+</ul>
+</li>
+</ul><h4>Usability Reports Check (usability_reports_check)</h4>
 
-<ul>
-<li>required</li>
-<li>integer </li>
-</ul>
-</li>
-<li>
-<code>service_id</code>
+<pre><code>`works`
+    * requred
+    * `boolean`
+    * Does the service work as expected
+* `site_id`
+    * required
+    * integer 
+* `service_id`
+    * required
+    * integer
+* `usability_report_id`
+    * required
+    * integer 
+</code></pre>
 
-<ul>
-<li>required</li>
-<li>integer</li>
-</ul>
-</li>
-<li>
-<code>usability_report_id</code>
-
-<ul>
-<li>required</li>
-<li>integer </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul><h2>Anomalies</h2>
+<h2>Anomalies</h2>
 
 <ul>
 <li><p>Created by the Green Team Leader</p></li>
@@ -641,27 +630,41 @@ the ids are listed in the admin sectiaon.</li>
 <li><p>The API can be found at <code>(IScorE_host)/api/v1/</code></p></li>
 </ul><h2>Scoring</h2>
 
-<ul>
-<li>
-<p>Scoring is the very heart of IScorE-rails</p>
+<pre><code>### Schmea
+#### Point Award (`point_award`)
+    * `site_id`
+        * required
+        * `interger`
 
-<h3>Schmea</h3>
+    * `earned_point` 
+        * required
+        * `integer`
+        * How Many Points Earned
+            * Can be any interger (postive and negtive)
 
-<ul>
-<li><code>site_id</code></li>
-<li>
-<code>earned_point</code> : interger</li>
-<li>
-<code>possible_points</code> : interger</li>
-<li>
-<code>published</code> : Can the blue teams see it : boolean</li>
-<li>
-<code>type</code> : What type points are these : string</li>
-<li>
-<code>reason</code> : What were point(s) awared: requred if penilty (negtive earned_points value)</li>
-</ul>
-</li>
-</ul>
+
+    * `possible_points`
+        * required
+        * `interger`
+        * How many points could be earned
+            * Needs to be `0` if the point is a 
+                * Pentaly
+                * Adjustment
+
+    * `published` 
+        * required
+        * `boolean` 
+        * Can the blue teams see it
+
+    * `type` 
+        * required 
+        * `string` 
+        * What type points are these
+
+    * `reason` 
+     * `text`
+     * What were point(s) awared: requred if penilty (negtive earned_points value)
+</code></pre>
         </section>
 
         <aside id="sidebar">
