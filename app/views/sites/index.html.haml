@@ -1,7 +1,8 @@
-%h1 Sites Current Staus
+= provide(:title, "Sites Current Status")
+%h1 Sites Current Status
 %table.table.table-bordered
   %tr
-    %th{colspan: "1"} #
+    %th{colspan: "1"}
     %th Name
     %th Points
     %th Organization
@@ -12,6 +13,7 @@
     %tr
       %td= @sites.index(site) + 1
       %td= link_to "Site #{site.number}: #{site.name}", site
+      %td= site.name
       %td= site.points
       - if @current_user.admin?
         %td= link_to raw('<i class="icon-edit"></i> Edit'), edit_site_path(site), class: 'btn btn-primary'
