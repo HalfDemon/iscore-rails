@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 describe "Sites" do
-  subject { page }
+
   
   describe "index" do
-    
+    subject { page }
     describe "listings" do
       
       before(:all) {30.times { create(:site) } }
