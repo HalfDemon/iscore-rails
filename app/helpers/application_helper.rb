@@ -1,5 +1,5 @@
 module ApplicationHelper
-	def title
+	def full_title
 		base_title = $cdc_name
 		if page_title.empty?
 			base_title

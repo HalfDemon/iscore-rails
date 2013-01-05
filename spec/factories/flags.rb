@@ -3,7 +3,7 @@
 FactoryGirl.define do
   factory :flag do
     content "MyText"
-    site nil
+    site site
     captured false
     captured_flag "MyText"
     earned_back_points ""

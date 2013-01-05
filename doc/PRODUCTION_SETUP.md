@@ -28,3 +28,5 @@
 7. Create Availability Checks
 
 8. Create Usability Report
+
+9. Run the Usability Setup Script
