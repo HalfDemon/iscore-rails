@@ -11,11 +11,11 @@ gem 'rails', '3.2.9'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'bootstrap-sass', '~> 2.0.3.1'
+  gem 'bootstrap-sass', '~> 2.2.2.0'
   gem 'font-awesome-sass-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -25,18 +25,12 @@ gem 'jquery-ui-rails'
 gem 'haml'
 gem 'chronic'
 group :development, :test do
-	gem 'rspec-rails', '~> 2.10.1'
+	gem 'rspec-rails', '~> 2.10.0'
 	gem 'spork', '~> 0.9.2'
 	gem 'rails_best_practices'
-	gem 'guard', '~> 1.2.1'
-	gem 'guard-spork', '~> 1.1.0'
-	gem 'guard-rspec', '~> 1.1.0'
-	gem 'guard-rails', '~> 0.1.0'
-	#gem 'guard-brakeman'
-	gem 'guard-migrate'
 	gem 'factory_girl_rails', '3.5.0'
 	gem 'guard-rails_best_practices'
-	gem 'capybara'
+	gem 'capybara', '~> 2.0.2'
   gem 'sqlite3'
 	gem 'rack-mini-profiler'
   gem 'annotate', '2.5.0'
