@@ -8,7 +8,7 @@ describe ApplicationHelper do
     end
 
     it "should includes the base name" do
-      full_title("foo").should =~ /^CDC Scoring/
+      full_title("foo").should =~ /^#{$cdc_name}/
     end
   end
 end
