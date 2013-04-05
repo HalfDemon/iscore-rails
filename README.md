@@ -34,8 +34,9 @@ Want to give back to IScorE-rails? Follow theses steps
 changes. If they do move to step 9 (nine). If not you're done
 9. If changes were requested please make the changes on the same topic branch and push them for your fork.
 10. Go back to Step 8, (repeat if needed)
+
 ## NOTE:
-	[The Schmea is Here](http://mab879.github.com/iscore-rails/database_map.html Schema Page)
+[The Schmea is Here](http://mab879.github.com/iscore-rails/database_map.html Schema Page)
 
 ## Team Descriptons ([from the Offical Iowa State Documention](https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf))
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
