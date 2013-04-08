@@ -414,38 +414,38 @@ After the CDC the permissions are the same expect for:
 
 ## Scoring
 
+### Schmea
+
+#### Point Award (`point_award`)
+* `site_id`
+	* required
+	* `interger`
+
+* `earned_point` 
+	* required
+	* `integer`
+	* How Many Points Earned
+		* Can be any interger (postive and negtive)
 	
-	### Schmea
-	#### Point Award (`point_award`)
-		* `site_id`
-			* required
-			* `interger`
-		
-		* `earned_point` 
-			* required
-			* `integer`
-			* How Many Points Earned
-				* Can be any interger (postive and negtive)
-			
-		
-		* `possible_points`
-			* required
-			* `interger`
-			* How many points could be earned
-				* Needs to be `0` if the point is a 
-					* Pentaly
-					* Adjustment
-			
-		* `published` 
-			* required
-			* `boolean` 
-			* Can the blue teams see it
-		
-		* `type` 
-			* required 
-			* `string` 
-			* What type points are these
-		
-		* `reason` 
-		 * `text`
-		 * What were point(s) awared: requred if penilty (negtive earned_points value)
+
+* `possible_points`
+	* required
+	* `interger`
+	* How many points could be earned
+		* Needs to be `0` if the point is a 
+			* Pentaly
+			* Adjustment
+	
+* `published` 
+	* required
+	* `boolean` 
+	* Can the blue teams see it
+
+* `type` 
+	* required 
+	* `string` 
+	* What type points are these
+
+* `reason` 
+ * `text`
+ * What were point(s) awared: requred if penilty (negtive earned_points value)
