@@ -631,41 +631,82 @@ the ids are listed in the admin sectiaon.</li>
 <li><p>The API can be found at <code>(IScorE_host)/api/v1/</code></p></li>
 </ul><h2>Scoring</h2>
 
-<pre><code>### Schmea
-#### Point Award (`point_award`)
-    * `site_id`
-        * required
-        * `interger`
+<h3>Schmea</h3>
 
-    * `earned_point` 
-        * required
-        * `integer`
-        * How Many Points Earned
-            * Can be any interger (postive and negtive)
+<h4>Point Award (<code>point_award</code>)</h4>
 
+<ul>
+<li>
+<p><code>site_id</code></p>
 
-    * `possible_points`
-        * required
-        * `interger`
-        * How many points could be earned
-            * Needs to be `0` if the point is a 
-                * Pentaly
-                * Adjustment
+<ul>
+<li>required</li>
+<li><code>interger</code></li>
+</ul>
+</li>
+<li>
+<p><code>earned_point</code> </p>
 
-    * `published` 
-        * required
-        * `boolean` 
-        * Can the blue teams see it
+<ul>
+<li>required</li>
+<li><code>integer</code></li>
+<li>How Many Points Earned
 
-    * `type` 
-        * required 
-        * `string` 
-        * What type points are these
+<ul>
+<li>Can be any interger (postive and negtive)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>possible_points</code></p>
 
-    * `reason` 
-     * `text`
-     * What were point(s) awared: requred if penilty (negtive earned_points value)
-</code></pre>
+<ul>
+<li>required</li>
+<li><code>interger</code></li>
+<li>How many points could be earned
+
+<ul>
+<li>Needs to be <code>0</code> if the point is a 
+
+<ul>
+<li>Pentaly</li>
+<li>Adjustment</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>published</code> </p>
+
+<ul>
+<li>required</li>
+<li>
+<code>boolean</code> </li>
+<li>Can the blue teams see it</li>
+</ul>
+</li>
+<li>
+<p><code>type</code> </p>
+
+<ul>
+<li>required </li>
+<li>
+<code>string</code> </li>
+<li>What type points are these</li>
+</ul>
+</li>
+<li>
+<p><code>reason</code> </p>
+
+<ul>
+<li><code>text</code></li>
+<li>What were point(s) awared: requred if penilty (negtive earned_points value)</li>
+</ul>
+</li>
+</ul>
         </section>
 
         <aside id="sidebar">
