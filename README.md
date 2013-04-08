@@ -255,20 +255,20 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 		* www 
 			www.site1.cdc.com
 
-#### Usability Reports Check (usability_reports_check)		
-	`works`
-		* requred
-		* `boolean`
-		* Does the service work as expected
-	* `site_id`
-		* required
-		* integer 
-	* `service_id`
-		* required
-		* integer
-	* `usability_report_id`
-		* required
-		* integer 
+#### Usability Reports Check (`usability_reports_check`)		
+`works`
+	* requred
+	* `boolean`
+	* Does the service work as expected
+* `site_id`
+	* required
+	* integer 
+* `service_id`
+	* required
+	* integer
+* `usability_report_id`
+	* required
+	* integer 
 		
 
 
