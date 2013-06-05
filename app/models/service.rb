@@ -12,8 +12,10 @@
 #
 # == Purpose
 # Track every teams service
+#
 # == Usage
 # These need to be created before the competition starts
+#
 # == Examples
 # Team 22 Web Server
 # * <tt>Name</tt> Team 22 Web Server
@@ -39,5 +41,4 @@ class Service < ActiveRecord::Base
   validates_uniqueness_of :name
 
   belongs_to :service_type
-
 end
