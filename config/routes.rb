@@ -1,29 +1,24 @@
 require 'api_constraints'
 
 Iscore::Application.routes.draw do
+
   resources :service_types
 
+  resources :organizations
 
   resources :availability_service_checks
 
-
   resources :availability_checks
-
 
   resources :usability_reports_checks
 
-
   resources :usability_reports_submissions
-
 
   resources :usability_reports
 
-
   resources :services
 
-
   resources :anomalies
-
 
   resources :flags
 

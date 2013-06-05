@@ -37,4 +37,7 @@ class Service < ActiveRecord::Base
   validates_numericality_of :port, :site_id
 
   validates_uniqueness_of :name
+
+  belongs_to :service_type
+
 end
