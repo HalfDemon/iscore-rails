@@ -4,6 +4,16 @@
       .container
         = link_to "IScorE", root_url, class: "brand"
         %ul.nav
-          %li= link_to raw('<i class="icon-home" style="color:#fff; font-size:24px;"></i> Home'), root_url
-          %li= link_to raw('<i class="icon-group" style="color:#fff; font-size:24px;"></i> Sites'), sites_url
-          %li= link_to raw('<i class="icon-user" style="color:#fff; font-size:24px;"></i> Users'), users_url
+          - if @current_user.nil?
+            %li= link_to raw('<i class="icon-home" style="color:#fff; font-size:24px;"></i> Home'), root_url
+          - elsif @current_user.blue?
+            %li= link_to "Dashboard", blue_dashbaord_url
+          - elsif @current_user.green?
+            %li= link_to "Dashboard", green_dashbaord_url
+          - elsif @current_user.red?
+            %li= link_to "Dashboard", red_dashbaord_url
+          - elsif @current_user.white?
+            %li= link_to "Dashboard", white_dashbaord_url
+          - elsif @current_user.admin?
+            %li= link_to raw('<i class="icon-group" style="color:#fff; font-size:24px;"></i> Sites'), sites_url
+            %li= link_to raw('<i class="icon-user" style="color:#fff; font-size:24px;"></i> Users'), users_url

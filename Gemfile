@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -24,6 +24,11 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'haml'
 gem 'chronic'
+gem 'cancan', '~> 1.6.8'
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'jbuilder'
+gem 'thin'
+
 group :development, :test do
 	gem 'rspec-rails', '~> 2.10.0'
 	gem 'spork', '~> 0.9.2'
@@ -32,7 +37,6 @@ group :development, :test do
 	gem 'guard-rails_best_practices'
 	gem 'capybara', '~> 2.0.2'
   gem 'sqlite3'
-	gem 'rack-mini-profiler'
   gem 'annotate', '2.5.0'
 end
 
@@ -42,20 +46,6 @@ group :production do
 	gem 'pg'
 end
 
-# Use CanCan to Auth users
-gem 'cancan', '~> 1.6.8'
-
-# To use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Thin is Cool
-gem 'thin'
 
 # Deploy with Capistrano
 # gem 'capistrano'

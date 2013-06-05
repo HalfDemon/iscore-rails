@@ -34,8 +34,9 @@ Want to give back to IScorE-rails? Follow theses steps
 changes. If they do move to step 9 (nine). If not you're done
 9. If changes were requested please make the changes on the same topic branch and push them for your fork.
 10. Go back to Step 8, (repeat if needed)
+
 ## NOTE:
-	[The Schmea is Here](http://mab879.github.com/iscore-rails/database_map.html Schema Page)
+[The Schmea is Here](http://mab879.github.com/iscore-rails/database_map.html Schema Page)
 
 ## Team Descriptons ([from the Offical Iowa State Documention](https://www.iac.iastate.edu/wiki/File:ITOCDC12-Rules.pdf))
 * Blue Teams - Competitors playing the role of the Information Assurance community.  These
@@ -254,20 +255,20 @@ Team in scoring and adjudication, and coordinates the Red, Green, and Blue Teams
 		* www 
 			www.site1.cdc.com
 
-#### Usability Reports Check (usability_reports_check)		
-	`works`
-		* requred
-		* `boolean`
-		* Does the service work as expected
-	* `site_id`
-		* required
-		* integer 
-	* `service_id`
-		* required
-		* integer
-	* `usability_report_id`
-		* required
-		* integer 
+#### Usability Reports Check (`usability_reports_check`)		
+`works`
+	* requred
+	* `boolean`
+	* Does the service work as expected
+* `site_id`
+	* required
+	* integer 
+* `service_id`
+	* required
+	* integer
+* `usability_report_id`
+	* required
+	* integer 
 		
 
 
@@ -413,38 +414,38 @@ After the CDC the permissions are the same expect for:
 
 ## Scoring
 
+### Schmea
+
+#### Point Award (`point_award`)
+* `site_id`
+	* required
+	* `interger`
+
+* `earned_point` 
+	* required
+	* `integer`
+	* How Many Points Earned
+		* Can be any interger (postive and negtive)
 	
-	### Schmea
-	#### Point Award (`point_award`)
-		* `site_id`
-			* required
-			* `interger`
-		
-		* `earned_point` 
-			* required
-			* `integer`
-			* How Many Points Earned
-				* Can be any interger (postive and negtive)
-			
-		
-		* `possible_points`
-			* required
-			* `interger`
-			* How many points could be earned
-				* Needs to be `0` if the point is a 
-					* Pentaly
-					* Adjustment
-			
-		* `published` 
-			* required
-			* `boolean` 
-			* Can the blue teams see it
-		
-		* `type` 
-			* required 
-			* `string` 
-			* What type points are these
-		
-		* `reason` 
-		 * `text`
-		 * What were point(s) awared: requred if penilty (negtive earned_points value)
+
+* `possible_points`
+	* required
+	* `interger`
+	* How many points could be earned
+		* Needs to be `0` if the point is a 
+			* Pentaly
+			* Adjustment
+	
+* `published` 
+	* required
+	* `boolean` 
+	* Can the blue teams see it
+
+* `type` 
+	* required 
+	* `string` 
+	* What type points are these
+
+* `reason` 
+ * `text`
+ * What were point(s) awared: requred if penilty (negtive earned_points value)
